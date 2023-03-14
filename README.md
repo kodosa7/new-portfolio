@@ -3,7 +3,7 @@
 
 This is the web portfolio summarizing my front-end development knowledge.
 
-Technologies used:
+Technologies used to make:
 - HTML5
 - CSS3
 - JavaScript
