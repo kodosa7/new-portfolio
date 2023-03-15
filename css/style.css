@@ -14,7 +14,7 @@
     --color-light: #f0f0f0;
     --color-dark: #060302;
     --color-dark-secondary: #545454;
-    --color-accent: #8A332B;
+    --color-accent: #743f22;
     --color-accent-secondary: #fcc200;
     --color-accent-light: #dbd9c5;
 
@@ -307,6 +307,7 @@ header {
     }
   } 
 
+/* Navigation + hamburger menu */
 
 .nav {
     position: fixed;
@@ -341,7 +342,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-secondary);
 }
 
 .nav-toggle {
@@ -353,6 +354,7 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+    
 }
 
 .nav-open .nav {
@@ -383,13 +385,11 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--color-accent);
     width: 2rem;
     height: 3px;
     border-radius: 1rem;
     transition: transform .25s ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -401,6 +401,12 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--color-accent);
+}
 
 
 /*  Intro section  */
