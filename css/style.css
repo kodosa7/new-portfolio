@@ -5,8 +5,8 @@
 }
 
 :root {
-    --ff-primary: 'Lora', serif;
-    --ff-secondary: 'Ubuntu', sans-serif;
+    --ff-primary: 'Reem Kufi', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
     
     --fw-reg: 400;
     --fw-bold: 700;
@@ -80,9 +80,17 @@ a:hover {
     color: var(--color-accent-light);
 }
 
+
 /* Buttons */
 
 /* Arrow next to the button */
+
+.about-me__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
 
 .arrow--wrapper {
     display: flex;
@@ -140,8 +148,8 @@ a:hover {
 .btn {
     display: inline-block;
     padding: 1em 2.5em;
-    background: var(--color-accent-secondary);
-    color: var(--color-dark);
+    /* background: var(--color-accent-secondary); */
+    /* color: var(--color-dark); */
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
@@ -150,12 +158,20 @@ a:hover {
     font-weight: var(--fw-bold);
     font-family: var(--ff-secondary);
     border-radius: .1rem;
-
     position: relative;
     transition: all 250ms ease-in-out;
     overflow: hidden /* hide slide element */
 }
 
+#btn--resume {
+    background: var(--color-dark-secondary);
+    color: var(--color-accent-light);
+}
+
+#btn--projects {
+    background: var(--color-accent-secondary);
+    color: var(--color-dark);
+}
 
 /* Buttons animation */
 
@@ -189,7 +205,7 @@ a:hover {
     z-index: 1;
 }
 
-.btn:focus, .btn:hover {
+.btn:focus, .btn:hover, #btn--resume:focus, #btn--resume:hover {
     border-radius: .1rem;
     color: var(--color-dark);
     transform: scale(1.1, 1.1);
@@ -204,6 +220,7 @@ a:hover {
     right: auto;
     width: 100%;
 }
+
 
 /* Typography */
 
@@ -220,7 +237,7 @@ h3 { font-size: var(--fs-h3); }
 
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: .4em;
     align-self: center;
 }
 
@@ -237,13 +254,20 @@ h3 { font-size: var(--fs-h3); }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
     background: var(--color-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     color: var(--color-light);
+}
+
+.section__subtitle--about {
+    background: var(--color-accent-secondary);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    color: var(--color-dark);
 }
 
 .section__subtitle--work {
@@ -285,8 +309,7 @@ header {
     position: absolute;
     width: 800px;
     height: 800px;
-    margin-top: 5rem;
-    margin-left: -52rem;
+    margin-left: -42rem;
     border-radius: 50%;
     z-index: -2;
     animation: bubbleWobble 10s infinite ease-in-out;
@@ -418,13 +441,45 @@ header {
 .intro__img {
     box-shadow: var(--bs);
     opacity: 1;
-    background: radial-gradient(#fff, var(--color-light));
+    /* background: radial-gradient(#fff, var(--color-light)); */
     border-radius: 50%;
 }
 
 .section__subtitle--intro {
     display: inline-block;
 }
+
+.first-name {
+    color: car(--color-dark);
+    font-weight: 400;
+    animation: firstName 1.5s ease-in;
+}
+
+@keyframes firstName {
+    from {
+        margin: -.5rem;
+    }
+    to {
+        margin: 0;
+    }
+} 
+
+.last-name {
+    letter-spacing: .4rem;
+    color: var(--color-dark);
+    font-weight: 800;
+    animation: lastName 1.5s ease-in;
+}
+
+@keyframes lastName {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+} 
+
 
 /* if more than 600 */
 @media (min-width: 601px) {
@@ -445,6 +500,11 @@ header {
         position: relative;
         z-index: 2;
     }    
+
+    .section__title--intro {
+        grid-area: title;
+        margin-top: 2rem;
+    }
     
     .section__subtitle--intro {
         align-self: start;
@@ -453,6 +513,7 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
+        margin-top: -1rem;
         width: calc(100% + 1.5em);
     }
 }
@@ -486,18 +547,81 @@ header {
 }
 
 
-/*  My services section  */
+/* About Me Section */
+
+.about-me {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding-bottom: 5.25rem;
+    overflow: hidden;
+    text-align: center;
+    margin: -5rem auto 0 auto;
+    font-family: var(--ff-secondary);
+}
+
+.about-me__img {
+    box-shadow: var(--bs);
+    border-radius: .1rem;
+}
+
+.about-me a {
+    color: var(--color-accent-secondary);
+    border-bottom: 2px dotted var(--color-accent-secondary);
+    text-decoration: none;
+}
+
+.about-me a:hover {
+    color: var(--color-light);
+    border-bottom: 2px dotted var(--color-light);
+    text-decoration: none;
+}
+
+.about-me .highlighted-text {
+    font-weight: 700;
+    color: var(--color-accent-secondary);
+}
+
+.about-me .btn,
+.about-me .btn:hover,
+.about-me .btn:focus {
+    color: var(--color-dark);
+    width: 18rem;
+    border: 0;
+}
+
+.about-me__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    font-family: var(--ff-secondary);
+    padding-bottom: 3rem;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.section__title--about {
+    font-family: var(--ff-primary);
+    color: var(--color-light);
+    position: relative;
+    margin-top: -2.5rem;
+}
+
+.section__title--about::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: .5em auto .5em auto;
+    background: var(--color-light);
+    opacity: 0.25;
+}
+
+
+/*  My services section (What I Do) */
 
 .my-services {
-    background-color: var(--color-dark);
-    /* background-image: url(../img/services-bg7.jpg); */
-    /* background-size: cover; */
-    /* background-blend-mode: normal; */
-    color: var(--color-light);
     text-align: center;
-    padding-bottom: 3.25rem;
-    overflow: hidden;
-    margin-top: -5.25rem;
+    margin: -1.5rem auto -1.5rem auto;
 }
 
 .my-services h3 {
@@ -506,12 +630,13 @@ header {
 
 .my-services .highlighted-text {
     font-weight: 700;
-    color: var(--color-accent-secondary);
+    color: var(--color-accent);
 }
 
 .section__title--services {
-    color: var(--color-light);
+    color: var(--color-dark);
     position: relative;
+    margin-top: -2.5rem;
 }
 
 .section__title--services::after {
@@ -519,13 +644,13 @@ header {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--color-light);
+    margin: .5em auto .75em auto;
+    background: var(--color-dark);
     opacity: 0.25;
 }
 
 .services {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     text-align: left;
 }
 
@@ -555,145 +680,105 @@ header {
     }
 }
 
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
-.about-me__img {
-    box-shadow: var(--bs);
-    border-radius: .1rem;
-}
 
-.about-me a {
-    border-bottom: 2px dotted var(--color-accent);
-    text-decoration: none;
-}
-
-.about-me a:hover {
-    color: var(--color-dark-secondary);
-    border-bottom: 2px dotted var(--color-dark-secondary);
-    text-decoration: none;
-}
-
-.about-me .highlighted-text {
-    font-weight: 700;
-    color: var(--color-accent);
-}
-
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-        "title img"
-        "subtitle img"
-        "text img";
-        grid-column-gap: 2em;
-    }
-    
-    
-    .about-me__body {
-        font-family: var(--ff-secondary);
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-/* My Work */
+/* My Work (My Projects) */
 
 .my-work {
     background-color: var(--color-dark);
     color: var(--color-light);
     text-align: center;
-    margin-top: -5.25rem;
-    margin-bottom: -3rem;
+    margin: -5.25rem 0 -3rem 0;
+}
+
+.section__title--work {
+    color: var(--color-light);
+    margin-top: -2rem;
 }
 
 .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
     margin: 0 auto;
     max-width: 1000px;
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
 }
 
 .portfolio__item {
-    background: var(--color-accent);
-    overflow: hidden;
+    background: var(--color-dark);
+    /* overflow: hidden; */
     border-radius: .1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__img {
+    object-fit: cover;
+    height: 100%;
+    margin: 0 auto;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-        object-fit: cover;
-        height: 100%;
-    }
+}
+
+.portfolio__text {
+    color: var(--color-light);
+    opacity: .5;
+    margin-top: .75em;
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.1);
+    opacity: .5;
+}
+
+.portfolio__item:hover .portfolio__text {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* footer */
+
+.footer {
+    background: var(--color-dark);
+    color: var(--color-accent-secondary);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
     
-    .portfolio__item:focus {
-        position: relative;
-        z-index: 2;
-    }
-    
-    .portfolio__img:hover,
-    .portfolio__item:focus .portfolio__img {
-        transform: scale(1.1);
-        opacity: .5;
-    }
-    
-    
-    /* footer */
-    
-    .footer {
-        background: var(--color-dark);
-        color: var(--color-accent-secondary);
-        text-align: center;
-        padding: 2.5em 0;
-        font-size: var(--fs-h3);
-        
-    }
-    
-    .footer a { 
-        color: inherit;
-        text-decoration: none;
-    }
-    
-    .footer__link {
-        font-weight: var(--fw-bold);
-        border-bottom: 5px dotted var(--color-accent-secondary);
-        text-decoration: none;
-    }
-    
-    /* .footer__link:hover, */
-    .social-list__link:hover {
-        opacity: .7;
-    }
-    
-    .footer__link:hover {
-        color: var(--color-light);
-    border-bottom: 5px dotted var(--color-light);
+}
+
+.footer a { 
+    color: inherit;
     text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+    border-bottom: 5px dotted var(--color-accent-secondary);
+    text-decoration: none;
+}
+
+/* .footer__link:hover, */
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    color: var(--color-light);
+border-bottom: 5px dotted var(--color-light);
+text-decoration: none;
 }
 
 .social-list {
@@ -720,7 +805,7 @@ header {
 }
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
+    padding: 0 2em 4em;
     max-width: 1000px;
     margin: 0 auto;
     font-family: var(--ff-secondary);
@@ -728,8 +813,7 @@ header {
 
 .portfolio-item-individual p {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1.5em auto;
 }
 
 .portfolio-item-individual .buttons {
@@ -744,7 +828,7 @@ header {
     font-size: 1rem;
     border: 1px solid var(--color-dark);
     color: var(--color-dark);
-    padding: 0.25em 1em;
+    padding: .25em 1em;
     text-decoration: none;
     transition: .25s;
 }
@@ -763,12 +847,12 @@ header {
 }
 
 .portfolio-item-individual .link:hover {
-    color: var(--color-accent-light);
+    color: var(--color-dark-secondary);
     border-bottom: 2px dotted var(--color-accent-light);
 }
 
 .tech-icon {
-    color: var(--color-accent-light);
+    color: var(--color-dark-secondary);
     padding-right: 1rem;
     font-size: 2rem;
     margin-top: .35rem;

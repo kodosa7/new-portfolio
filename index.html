@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Ella's Portfolio</title>
+        
         <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Ubuntu:400,700&display=swap" rel="stylesheet"> 
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" crossorigin="anonymous" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -26,12 +34,13 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
                     </ul>
                 </nav>
             </header>
+        
             
             <!-- Introduction -->
 
@@ -39,18 +48,51 @@
                 <div class="bubble-top">
                 </div>
                 <h1 class="section__title section__title--intro">
-                    Hi, I am <strong>Ella Šenovská</strong>
+                    <!-- <strong> -->
+                        <span class="first-name">ELLA</span>
+                        <br>
+                        <span class="last-name">ŠENOVSKÁ</span>
+                    <!-- </strong> -->
                 </h1>
                 <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
-                <img src="./img/avatar.png" alt="a picture of Ella Šenovská smiling" class="intro__img">
+                <img src="./img/avatar2.png" alt="a photo of Ella Šenovská" class="intro__img">
             </section>
         </div>        
+ 
+        
+        <!-- About me -->
+        
+        <div class="section-wedge"></div>
+        
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+           
+            <div class="about-me__body">
+                <p>I escaped a monothematic job to strive my <span class="highlighted-text">creative passion</span> to become a <span class="highlighted-text">web developer and designer</span>. I'm based in Prague, Czech Republic. Based on my computer art roots on the <span class="highlighted-text"><a href="https://en.wikipedia.org/wiki/Demoscene" target="_blank">demoscene</a></span>, I'm on the way to apply my audiovisual design experiences in the real world.</p>
+                <p>I have an IT background as a helpdesk supporter and a conference audio and video technician. I love hiking and I climb hills to see nice nature views. While not out, I'm painting pictures, composing electronic music or hanging out with friends.</p>
+            </div>
+           
+            <div class="about-me__buttons">
+                <a
+                    href="https://www.dropbox.com/s/4yln2lcu4ivqrb8/Ella%20%C5%A0enovsk%C3%A1%20CV%20%5B230423%5D%20FE%20dev.pdf?dl=0"
+                    class="btn"
+                    id="btn--resume"
+                    target="_blank">
+                    <span><i class="fas fa-file-pdf"></i>  My Resume</span>
+                </a>
+                <a href="#work" class="btn" id="btn--projects"><span><i class="fas fa-arrow-down"></i>  My Projects</span></a>
+            </div>
+
+        </section>
+
         
         <!-- My services -->
         
         <div class="section-wedge"></div>
         
         <section class="my-services" id="services">
+            <div class="bubble-middle"></div>
+
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
@@ -71,28 +113,11 @@
                 </div> <!-- / service -->
                 
             </div> <!-- / services -->
-            <a href="#work" class="btn"><span>My Projects</span></a>
+
             <!-- <div class="arrow--wrapper">
                 <span class="btn_arrow--text">scroll</span>
                 <img class="btn_arrow" src="./img/arrow-down.svg" />
             </div> -->
-        </section>
-        
-        <div class="section-wedge"></div>
-    
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <div class="bubble-middle">
-            </div>
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Front-end developer with UX/UI design background</p>
-           
-           <div class="about-me__body">
-               <p>I escaped a monothematic job to strive my <span class="highlighted-text">creative passion</span> to become a <span class="highlighted-text">web developer and designer</span>. I'm based in Prague, Czech Republic. I like building apps that solve real-world problems, and that are delightful to use. Based on my computer <span class="highlighted-text"><a href="https://en.wikipedia.org/wiki/Demoscene" target="_blank">demoscene</a></span> roots, I'm on the way to apply my audiovisual design experiences in the real world.</p>
-               <p>I have an IT background as a helpdesk supporter and a conference audio and video technician. I love hiking and I climb hills to see nice views in the nature. While not out, I'm painting pictures, composing electronic music or hanging out with friends.</p>
-           </div>
-           
-           <img src="./img/whoiam.jpg" alt="Ella standing on the view" class="about-me__img">
         </section>
         
         <!-- My Work -->
@@ -105,49 +130,94 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a aria-label="C64ColQuiz" href="./portfolio-items/portfolio-item-01.html" class="portfolio__item">
-                    <img src="./img/c64colquiz.png" alt="C64ColQuiz image" class="portfolio__img">
-                </a>
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="C64ColQuiz" href="./portfolio-items/portfolio-item-01.html">
+                            <img src="./img/c64colquiz-square.png" alt="C64ColQuiz image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">C64ColQuiz</div>
+                </div>
 
                 <!-- Portfolio item 02 -->
-                <a aria-label="Quizzical" href="./portfolio-items/portfolio-item-02.html" class="portfolio__item">
-                    <img src="./img/quizzical.png" alt="Quizzical image" class="portfolio__img">
-                </a>
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Quizzical" href="./portfolio-items/portfolio-item-02.html">
+                            <img src="./img/quizzical-square.png" alt="Quizzical image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Quizzical</div>
+                </div>
 
                 <!-- Portfolio item 03 -->
-                <a aria-label="Travel Journal" href="./portfolio-items/portfolio-item-03.html" class="portfolio__item">
-                    <img src="./img/travel-journal.png" alt="Travel Journal image" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Travel Journal" href="./portfolio-items/portfolio-item-03.html">
+                            <img src="./img/travel-journal-square.png" alt="Travel Journal image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Travel Journal</div>
+                </div>                
+
                 <!-- Portfolio item 04 -->
-                <a aria-label="Personal Dashboard" href="./portfolio-items/portfolio-item-04.html" class="portfolio__item">
-                    <img src="./img/personal-dashboard.png" alt="Personal Dashboard image" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Personal Dashboard" href="./portfolio-items/portfolio-item-04.html">
+                            <img src="./img/personal-dashboard-square.png" alt="Personal Dashboard image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Personal Dashboard</div>
+                </div>                
+
                 <!-- Portfolio item 05 -->
-                <a aria-label="Color Picker" href="./portfolio-items/portfolio-item-05.html" class="portfolio__item">
-                    <img src="./img/color-picker.png" alt="Color Picker image" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Color Picker" href="./portfolio-items/portfolio-item-05.html">
+                            <img src="./img/color-picker-square.png" alt="Color Picker image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Color Picker</div>
+                </div>                
+
                 <!-- Portfolio item 06 -->
-                <a aria-label="Mobile Restaurant" href="./portfolio-items/portfolio-item-06.html" class="portfolio__item">
-                    <img src="./img/mobile-restaurant.png" alt="Mobile Restaurant image" class="portfolio__img">
-                </a>
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Mobile Restaurant" href="./portfolio-items/portfolio-item-06.html">
+                            <img src="./img/mobile-restaurant-square.png" alt="Mobile Restaurant image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Mobile Restaurant</div>
+                </div>
 
                 <!-- Portfolio item 07 -->
-                <a aria-label="Twimba" href="./portfolio-items/portfolio-item-07.html" class="portfolio__item">
-                    <img src="./img/twimba.png" alt="Twimba image" class="portfolio__img">
-                </a>
-    
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Twimba" href="./portfolio-items/portfolio-item-07.html">
+                            <img src="./img/twimba.png" alt="Twimba image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Twimba</div>
+                </div>    
+
                 <!-- Portfolio item 08 -->
-                <a aria-label="Password Generator" href="./portfolio-items/portfolio-item-08.html" class="portfolio__item">
-                    <img src="./img/password-generator.jpg" alt="Password Generator image" class="portfolio__img">
-                </a>
-                
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Password Generator" href="./portfolio-items/portfolio-item-08.html">
+                            <img src="./img/password-generator.jpg" alt="Password Generator image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Password Generator</div>
+                </div>                
+
                 <!-- Portfolio item 09 -->
-                <a aria-label="Unit Converter" href="./portfolio-items/portfolio-item-09.html" class="portfolio__item">
-                    <img src="./img/unit-converter.png" alt="Unit Converter image" class="portfolio__img">
-                </a>
+                <div class="portfolio__item">
+                    <div class="portfolio__img">
+                        <a aria-label="Unit Converter" href="./portfolio-items/portfolio-item-09.html">
+                            <img src="./img/unit-converter-square.png" alt="Unit Converter image">
+                        </a>
+                    </div>
+                    <div class="portfolio__text">Unit Converter</div>
+                </div>
             </div>
         </section>
        
@@ -170,6 +240,11 @@
                         <i class="fab fa-behance"></i>
                     </a>
                 </li>
+                <!-- <li class="social-list__item">
+                    <a aria-label="CV" class="social-list__link" href="https://www.dropbox.com/s/4yln2lcu4ivqrb8/Ella%20%C5%A0enovsk%C3%A1%20CV%20%5B230423%5D%20FE%20dev.pdf?dl=0" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </li> -->
             </ul>
         </footer>
         
