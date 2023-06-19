@@ -8,4 +8,4 @@ Technologies used to make:
 - CSS3
 - JavaScript
 
-![image](https://github.com/kodosa7/new-portfolio/assets/57393100/c4b0ce50-7749-47b6-98e9-fb826c8d2f1a)
+![image](https://github.com/kodosa7/new-portfolio/assets/57393100/916a7e87-4c5e-4480-a92d-5d1791a605dd)
