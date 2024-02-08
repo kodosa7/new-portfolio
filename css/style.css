@@ -467,7 +467,7 @@ header {
 .last-name {
     letter-spacing: .4rem;
     color: var(--color-dark);
-    font-weight: 800;
+    font-weight: 700;
     animation: lastName 1.5s ease-in;
 }
 
