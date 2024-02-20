@@ -872,3 +872,7 @@ header {
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg) skew(-1deg);
 }
+
+.sr-heading {
+    display: none;
+}
