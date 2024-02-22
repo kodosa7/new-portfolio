@@ -52,7 +52,10 @@ body {
     line-height: 1.6;
 }
 
-section {
+.intro,
+.my-work,
+.my-services,
+.about-me {
     padding: 5em 2em;
 }
 
