@@ -296,14 +296,16 @@ header {
     justify-content: space-between;
 }
 
+
 .header-main {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
-        url("../img/pattern-bg.png");
+    url("../img/pattern-bg.png");
     background-size: cover;
     padding: 1rem;
 }
 
-.bubble-top {
+.intro::before {
+    content: "";
     max-width: 400px;
     background: var(--color-accent-light);
     position: absolute;
