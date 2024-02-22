@@ -881,6 +881,12 @@ header {
     transform: rotate(-1deg) skew(-1deg);
 }
 
+@media (min-width: 2250px) {
+    .section-wedge {
+        transform: none;
+    }
+}
+
 .sr-heading {
     display: none;
 }
