@@ -300,6 +300,10 @@ header {
     background-size: cover;
 }
 
+.item-header {
+    display: none;
+}
+
 .bubble-top {
     max-width: 400px;
     background: var(--color-accent-light);
