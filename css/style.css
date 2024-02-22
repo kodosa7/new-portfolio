@@ -295,9 +295,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-}
-
-.bg-image {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
         url("../img/pattern-bg.png");
     background-size: cover;
