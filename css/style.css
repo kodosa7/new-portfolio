@@ -296,10 +296,9 @@ header {
     justify-content: space-between;
 }
 
-
 .header-main {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
-    url("../img/pattern-bg.png");
+        url("../img/pattern-bg.png");
     background-size: cover;
     padding: 1rem;
 }
@@ -317,13 +316,14 @@ header {
     animation: bubbleWobble 10s infinite ease-in-out;
 }
 
-.bubble-middle {
+.my-services::before {
+    content: "";
     max-width: 800px;
     background: var(--color-accent-light);
     position: absolute;
     width: 800px;
     height: 800px;
-    margin-left: -42rem;
+    margin-left: -76rem;
     border-radius: 50%;
     z-index: -2;
     animation: bubbleWobble 10s infinite ease-in-out;
