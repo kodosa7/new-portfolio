@@ -463,6 +463,7 @@ header {
 .first-name {
     color: car(--color-dark);
     font-weight: 400;
+    text-transform: uppercase;
     animation: firstName 1.5s ease-in;
 }
 
@@ -479,6 +480,7 @@ header {
     letter-spacing: 0.4rem;
     color: var(--color-dark);
     font-weight: 700;
+    text-transform: uppercase;
     animation: lastName 1.5s ease-in;
 }
 
