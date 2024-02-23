@@ -460,7 +460,7 @@ header {
 /*  Intro section  */
 
 .intro {
-    position: relative;
+    /* position: relative; */
 }
 
 .intro__img {
@@ -527,6 +527,11 @@ header {
         z-index: 2;
     }
 
+    .name {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .section__title--intro {
         grid-area: title;
         margin-top: 2rem;
