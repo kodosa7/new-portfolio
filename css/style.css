@@ -20,7 +20,7 @@
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: 1rem;
     --fs-body: 1.25rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -31,7 +31,7 @@
     :root {
         --fs-h1: 5.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 2rem;
+        --fs-h3: 1rem;
         --fs-body: 1.25rem;
     }
 }
@@ -236,7 +236,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
     line-height: 1;
     margin: 0;
 }
@@ -244,11 +245,18 @@ h3 {
 h1 {
     font-size: var(--fs-h1);
 }
+
 h2 {
     font-size: var(--fs-h2);
 }
+
 h3 {
+    color: var(--color-light);
+    opacity: 0.5;
+    margin-top: 0.75em;
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
     font-size: var(--fs-h3);
+    font-weight: 300;
 }
 
 .section__title {
@@ -738,12 +746,13 @@ header {
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
-.portfolio__heading {
+/* h5 {
     color: var(--color-light);
     opacity: 0.5;
     margin-top: 0.75em;
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-}
+    font-size: var(--fs-h5);
+} */
 
 .portfolio__item:focus {
     position: relative;
