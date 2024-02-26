@@ -175,8 +175,6 @@ h3 {
 .btn {
     display: inline-block;
     padding: 1em 2.5em;
-    /* background: var(--color-accent-secondary); */
-    /* color: var(--color-dark); */
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem;
@@ -200,10 +198,20 @@ h3 {
     color: var(--color-dark);
 }
 
+.btn--projects:focus,
+.btn--projects:hover,
+.btn--resume:focus,
+.btn--resume:hover {
+    color: var(--color-dark);
+    border-radius: 0.1rem;
+    transform: scale(1.01, 1.01);
+}
+
 /* Buttons animation */
 
 .btn:before {
     /* slide element before */
+    content: "";
     width: 50px;
     background-color: hsla(0, 0%, 100%, 0.3);
     right: calc(100% + 38px);
@@ -223,6 +231,7 @@ h3 {
 
 .btn:after {
     /* slide element after */
+    content: "";
     right: 0px;
     width: 0;
     background-color: var(--color-accent-light);
@@ -236,22 +245,16 @@ h3 {
     z-index: 1;
 }
 
-.btn:focus,
-.btn:hover,
-.btn--resume:focus,
-.btn--resume:hover {
-    border-radius: 0.1rem;
-    color: var(--color-dark);
-    transform: scale(1.1, 1.1);
-}
 
 .btn:focus:before,
 .btn:hover:before {
+    content: "";
     right: -88px;
 }
 
 .btn:focus:after,
 .btn:hover:after {
+    content: "";
     left: 0;
     right: auto;
     width: 100%;
@@ -531,7 +534,7 @@ header {
         display: flex;
         flex-direction: column;
     }
-    
+
     .section__title--intro {
         grid-area: title;
         margin-top: 2rem;
@@ -594,13 +597,13 @@ header {
     border-radius: 0.1rem;
 }
 
-.about-me a {
+.about-me .about-me__link {
     color: var(--color-accent-secondary);
     border-bottom: 2px dotted var(--color-accent-secondary);
     text-decoration: none;
 }
 
-.about-me a:hover {
+.about-me .about-me__link:hover {
     color: var(--color-light);
     border-bottom: 2px dotted var(--color-light);
     text-decoration: none;
@@ -614,7 +617,7 @@ header {
 .about-me .btn,
 .about-me .btn:hover,
 .about-me .btn:focus {
-    color: var(--color-dark);
+    /* color: var(--color-dark); */
     width: 18rem;
     border: 0;
 }
