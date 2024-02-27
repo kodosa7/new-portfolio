@@ -5,11 +5,11 @@
 }
 
 :root {
-    --ff-primary: "Reem Kufi", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
+    --font-primary: "Reem Kufi", sans-serif;
+    --font-secondary: "Open Sans", sans-serif;
 
-    --fw-reg: 400;
-    --fw-bold: 700;
+    --font-weight-reg: 400;
+    --font-weight-bold: 700;
 
     --color-light: #f0f0f0;
     --color-dark: #060302;
@@ -18,21 +18,21 @@
     --color-accent-secondary: #fcc200;
     --color-accent-light: #dbd9c5;
 
-    --fs-h1: 3rem;
-    --fs-h2: 1.5rem;
-    --fs-h3: 1rem;
-    --fs-body: 1.25rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1rem;
+    --font-size-body: 1.25rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+    --shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 /* if more than 800 */
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 5.5rem;
-        --fs-h2: 2.25rem;
-        --fs-h3: 1rem;
-        --fs-body: 1.25rem;
+        --font-size-h1: 5.5rem;
+        --font-size-h2: 2.25rem;
+        --font-size-h3: 1rem;
+        --font-size-body: 1.25rem;
     }
 }
 
@@ -47,8 +47,8 @@ body {
     background: var(--color-light);
     color: var(--color-dark);
     margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-body);
     line-height: 1.6;
 }
 
@@ -65,7 +65,7 @@ img {
 }
 
 strong {
-    font-weight: var(--fw-bold);
+    font-weight: var(--font-weight-bold);
 }
 
 :focus {
@@ -93,11 +93,11 @@ h3 {
 }
 
 h1 {
-    font-size: var(--fs-h1);
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: var(--fs-h2);
+    font-size: var(--font-size-h2);
 }
 
 h3 {
@@ -105,7 +105,7 @@ h3 {
     opacity: 0.5;
     margin-top: 0.75em;
     /* transition: transform 0.25s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear; */
-    font-size: var(--fs-h3);
+    font-size: var(--font-size-h3);
     font-weight: 300;
 }
 
@@ -151,7 +151,7 @@ h3 {
     position: relative;
     margin-top: 0.7em;
     margin-right: -2.3em;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
     font-size: 0.8em;
     animation: textJump 1.25s infinite ease-in-out;
 }
@@ -180,8 +180,8 @@ h3 {
     font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    font-family: var(--ff-secondary);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-secondary);
     border-radius: 0.1rem;
     position: relative;
     transition: all 250ms ease-in-out;
@@ -266,7 +266,7 @@ h3 {
 }
 
 .section__title--intro {
-    font-weight: var(--fw-reg);
+    font-weight: var(--font-weight-reg);
 }
 
 .section__title--intro strong {
@@ -275,13 +275,13 @@ h3 {
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h2);
+    font-size: var(--font-size-h2);
 }
 
 .section__subtitle--intro {
     background: var(--color-accent);
     padding: 0.25em 1em;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
     margin-bottom: 1em;
     color: var(--color-light);
 }
@@ -289,16 +289,16 @@ h3 {
 .section__subtitle--about {
     background: var(--color-accent-secondary);
     padding: 0.25em 1em;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
     margin-bottom: 1em;
     color: var(--color-dark);
 }
 
 .section__subtitle--work {
     color: var(--color-accent-secondary);
-    font-weight: var(--fw-bold);
+    font-weight: var(--font-weight-bold);
     margin-bottom: 1.75em;
-    font-family: var(--ff-primary);
+    font-family: var(--font-primary);
 }
 
 /* header */
@@ -385,8 +385,8 @@ header {
 
 .nav__link {
     color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
     text-decoration: none;
 }
 
@@ -467,7 +467,7 @@ header {
 }
 
 .intro__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--shadow);
     opacity: 1;
     /* background: radial-gradient(#fff, var(--color-light)); */
     border-radius: 50%;
@@ -589,11 +589,11 @@ header {
     overflow: hidden;
     text-align: center;
     margin: -5rem auto 0 auto;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--shadow);
     border-radius: 0.1rem;
 }
 
@@ -626,14 +626,14 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 900px;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
     padding-bottom: 3rem;
     text-align: left;
     margin: 0 auto;
 }
 
 .section__title--about {
-    font-family: var(--ff-primary);
+    font-family: var(--font-primary);
     color: var(--color-light);
     position: relative;
     margin-top: -2.5rem;
@@ -657,7 +657,7 @@ header {
 }
 
 .my-services h3 {
-    font-family: var(--ff-primary);
+    font-family: var(--font-primary);
 }
 
 .my-services .highlighted-text {
@@ -689,7 +689,7 @@ header {
 .service {
     max-width: 400px;
     margin: 0 auto 2em;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
 }
 
 @media (min-width: 800px) {
@@ -732,7 +732,7 @@ header {
     gap: 2em;
     margin: 0 auto;
     max-width: 1000px;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
     /* font-size: 1rem; */
 }
 
@@ -775,7 +775,7 @@ header {
     color: var(--color-accent-secondary);
     text-align: center;
     padding: 2.5em 0;
-    font-size: var(--fs-h2);
+    font-size: var(--font-size-h2);
 }
 
 .footer a {
@@ -784,7 +784,7 @@ header {
 }
 
 .footer__link {
-    font-weight: var(--fw-bold);
+    font-weight: var(--font-weight-bold);
     border-bottom: 5px dotted var(--color-accent-secondary);
     text-decoration: none;
 }
@@ -826,7 +826,7 @@ header {
     padding: 0 2em 4em;
     max-width: 1000px;
     margin: 0 auto;
-    font-family: var(--ff-secondary);
+    font-family: var(--font-secondary);
 }
 
 .portfolio-item-individual p {
