@@ -190,6 +190,8 @@ h3 {
     transform: scale(1.01, 1.01);
 }
 
+/* Intro */
+
 .title {
     margin-bottom: 0.4em;
     align-self: center;
@@ -201,6 +203,23 @@ h3 {
 
 .title--intro strong {
     display: block;
+}
+
+.title--about {
+    font-family: var(--font-primary);
+    color: var(--color-light);
+    position: relative;
+    margin-top: -2.5rem;
+}
+
+.title--about::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 0.5em auto;
+    background-color: var(--color-light);
+    opacity: 0.25;
 }
 
 .subtitle {
@@ -231,7 +250,7 @@ h3 {
     font-family: var(--font-primary);
 }
 
-/* header */
+/* Header */
 
 header {
     display: flex;
@@ -559,23 +578,6 @@ header {
     padding-bottom: 3rem;
     text-align: left;
     margin: 0 auto;
-}
-
-.title--about {
-    font-family: var(--font-primary);
-    color: var(--color-light);
-    position: relative;
-    margin-top: -2.5rem;
-}
-
-.title--about::after {
-    content: "";
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 0.5em auto;
-    background-color: var(--color-light);
-    opacity: 0.25;
 }
 
 /*  My services section (What I Do) */
