@@ -26,7 +26,7 @@
     --shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-/* if more than 800 */
+/* if more than 799px */
 @media (min-width: 800px) {
     :root {
         --font-size-h1: 5.5rem;
@@ -38,13 +38,12 @@
 
 /* General styles */
 
-/* smooth scrolling */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* smooth scrolling */
 }
 
 body {
-    background: var(--color-light);
+    background-color: var(--color-light);
     color: var(--color-dark);
     margin: 0;
     font-family: var(--font-primary);
@@ -52,16 +51,11 @@ body {
     line-height: 1.6;
 }
 
-.intro,
-.my-work,
-.my-services,
-.about-me {
-    padding: 5em 2em;
-}
 
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 strong {
@@ -103,21 +97,23 @@ h2 {
 h3 {
     color: var(--color-light);
     opacity: 0.5;
-    margin-top: 0.75em;
-    /* transition: transform 0.25s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear; */
+    margin-top: 0.75rem;
     font-size: var(--font-size-h3);
     font-weight: 300;
 }
 
+.container {
+    padding: 5em 2em;
+}
+
 /* Buttons */
 
-/* Arrow next to the button */
 .about-me__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2em;
-}
+} /* Arrow next to the button */
 
 .arrow--wrapper {
     display: flex;
@@ -189,12 +185,12 @@ h3 {
 }
 
 .btn--resume {
-    background: var(--color-dark-secondary);
+    background-color: var(--color-dark-secondary);
     color: var(--color-accent-light);
 }
 
 .btn--projects {
-    background: var(--color-accent-secondary);
+    background-color: var(--color-accent-secondary);
     color: var(--color-dark);
 }
 
@@ -210,15 +206,14 @@ h3 {
 /* Buttons animation */
 
 .btn:before {
-    /* slide element before */
-    content: "";
+content: "";
     width: 50px;
     background-color: hsla(0, 0%, 100%, 0.3);
     right: calc(100% + 38px);
     transform: skew(-45deg);
     transition: all 300ms ease-in-out 150ms;
     z-index: 1;
-}
+} /* slide element before */
 
 .btn:after,
 .btn:before {
@@ -230,20 +225,18 @@ h3 {
 }
 
 .btn:after {
-    /* slide element after */
     content: "";
     right: 0px;
     width: 0;
     background-color: var(--color-accent-light);
     transition: all 300ms ease-in-out 0s;
-}
+} /* slide element after */
 
 .btn span {
-    /* button text */
     display: block;
     position: relative;
     z-index: 1;
-}
+} /* button text */
 
 
 .btn:focus:before,
@@ -279,7 +272,7 @@ h3 {
 }
 
 .section__subtitle--intro {
-    background: var(--color-accent);
+    background-color: var(--color-accent);
     padding: 0.25em 1em;
     font-family: var(--font-secondary);
     margin-bottom: 1em;
@@ -287,7 +280,7 @@ h3 {
 }
 
 .section__subtitle--about {
-    background: var(--color-accent-secondary);
+    background-color: var(--color-accent-secondary);
     padding: 0.25em 1em;
     font-family: var(--font-secondary);
     margin-bottom: 1em;
@@ -318,7 +311,7 @@ header {
 .intro::before {
     content: "";
     max-width: 400px;
-    background: var(--color-accent-light);
+    background-color: var(--color-accent-light);
     position: absolute;
     width: 400px;
     height: 400px;
@@ -331,7 +324,7 @@ header {
 .my-services::before {
     content: "";
     max-width: 800px;
-    background: var(--color-accent-light);
+    background-color: var(--color-accent-light);
     position: absolute;
     width: 800px;
     height: 800px;
@@ -356,18 +349,17 @@ header {
     }
 }
 
-/* Navigation + hamburger menu */
+/* Navigation and hamburger menu */
 
 .nav {
     position: fixed;
-    background: var(--color-dark);
+    background-color: var(--color-dark);
     color: var(--color-light);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 100;
-
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
@@ -396,7 +388,7 @@ header {
 
 .nav-toggle {
     padding: 0.5em;
-    background: transparent;
+    background-color: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
@@ -457,19 +449,14 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--color-accent);
+    background-color: var(--color-accent);
 }
 
 /*  Intro section  */
 
-.intro {
-    /* position: relative; */
-}
-
 .intro__img {
     box-shadow: var(--shadow);
     opacity: 1;
-    /* background: radial-gradient(#fff, var(--color-light)); */
     border-radius: 50%;
 }
 
@@ -510,7 +497,7 @@ header {
     }
 }
 
-/* if more than 600 */
+/* if more than 601 */
 @media (min-width: 601px) {
     .intro {
         display: grid;
@@ -617,7 +604,6 @@ header {
 .about-me .btn,
 .about-me .btn:hover,
 .about-me .btn:focus {
-    /* color: var(--color-dark); */
     width: 18rem;
     border: 0;
 }
@@ -645,7 +631,7 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 0.5em auto;
-    background: var(--color-light);
+    background-color: var(--color-light);
     opacity: 0.25;
 }
 
@@ -677,7 +663,7 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 0.75em auto;
-    background: var(--color-dark);
+    background-color: var(--color-dark);
     opacity: 0.25;
 }
 
@@ -733,12 +719,10 @@ header {
     margin: 0 auto;
     max-width: 1000px;
     font-family: var(--font-secondary);
-    /* font-size: 1rem; */
 }
 
 .portfolio__item {
-    background: var(--color-dark);
-    /* overflow: hidden; */
+    background-color: var(--color-dark);
     border-radius: 0.1rem;
     display: flex;
     flex-direction: column;
@@ -771,7 +755,7 @@ header {
 /* footer */
 
 .footer {
-    background: var(--color-dark);
+    background-color: var(--color-dark);
     color: var(--color-accent-secondary);
     text-align: center;
     padding: 2.5em 0;
@@ -789,7 +773,6 @@ header {
     text-decoration: none;
 }
 
-/* .footer__link:hover, */
 .social-list__link:hover {
     opacity: 0.7;
 }
@@ -877,12 +860,11 @@ header {
 }
 
 .section-wedge {
-    background: var(--color-dark);
+    background-color: var(--color-dark);
     position: relative;
     top: -2.25rem;
     width: 100%;
     height: 4rem;
-    /* overflow: hidden; */
     -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg) skew(-1deg);
 }
