@@ -343,7 +343,7 @@ header {
     color: var(--color-accent-secondary);
 }
 
-.nav-toggle {
+.nav__toggle {
     position: absolute;
     padding: 0.5em;
     right: 1em;
@@ -358,54 +358,54 @@ header {
     transform: translateX(0);
 }
 
-.nav-open .nav-toggle {
+.nav-open .nav__toggle {
     position: fixed;
 }
 
-.nav-open .hamburger {
+.nav-open .nav__toggle--hamburger {
     transform: rotate(0.625turn);
 }
 
-.nav-open .hamburger::before {
+.nav-open .nav__toggle--hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .hamburger::after {
+.nav-open .nav__toggle--hamburger::after {
     opacity: 0;
 }
 
-.hamburger {
+.nav__toggle--hamburger {
     display: block;
     position: relative;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.nav__toggle--hamburger,
+.nav__toggle--hamburger::before,
+.nav__toggle--hamburger::after {
     width: 2rem;
     height: 3px;
     border-radius: 1rem;
     transition: transform 0.25s ease-in-out;
 }
 
-.hamburger::before,
-.hamburger::after {
+.nav__toggle--hamburger::before,
+.nav__toggle--hamburger::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.hamburger::before {
+.nav__toggle--hamburger::before {
     top: 6px;
 }
-.hamburger::after {
+.nav__toggle--hamburger::after {
     bottom: 6px;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.nav__toggle--hamburger,
+.nav__toggle--hamburger::before,
+.nav__toggle--hamburger::after {
     background-color: var(--color-accent);
 }
 
