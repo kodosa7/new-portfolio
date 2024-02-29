@@ -271,12 +271,9 @@ h3 {
 
 /* Header */
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .header__main {
+    justify-content: space-between;
+    display: flex;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
     url("../img/pattern-bg.webp");
     background-size: cover;
@@ -361,7 +358,7 @@ header {
     color: var(--color-accent-secondary);
 }
 
-.nav__toggle {
+.nav-btn__toggle {
     position: absolute;
     padding: 0.5em;
     right: 1em;
@@ -376,54 +373,54 @@ header {
     transform: translateX(0);
 }
 
-.nav-open .nav__toggle {
+.nav-open .nav-btn__toggle {
     position: fixed;
 }
 
-.nav-open .nav__toggle--hamburger {
+.nav-open .nav-btn__toggle--hamburger {
     transform: rotate(0.625turn);
 }
 
-.nav-open .nav__toggle--hamburger::before {
+.nav-open .nav-btn__toggle--hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .nav__toggle--hamburger::after {
+.nav-open .nav-btn__toggle--hamburger::after {
     opacity: 0;
 }
 
-.nav__toggle--hamburger {
+.nav-btn__toggle--hamburger {
     display: block;
     position: relative;
 }
 
-.nav__toggle--hamburger,
-.nav__toggle--hamburger::before,
-.nav__toggle--hamburger::after {
+.nav-btn__toggle--hamburger,
+.nav-btn__toggle--hamburger::before,
+.nav-btn__toggle--hamburger::after {
     width: 2rem;
     height: 3px;
     border-radius: 1rem;
     transition: transform 0.25s ease-in-out;
 }
 
-.nav__toggle--hamburger::before,
-.nav__toggle--hamburger::after {
+.nav-btn__toggle--hamburger::before,
+.nav-btn__toggle--hamburger::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.nav__toggle--hamburger::before {
+.nav-btn__toggle--hamburger::before {
     top: 6px;
 }
-.nav__toggle--hamburger::after {
+.nav-btn__toggle--hamburger::after {
     bottom: 6px;
 }
 
-.nav__toggle--hamburger,
-.nav__toggle--hamburger::before,
-.nav__toggle--hamburger::after {
+.nav-btn__toggle--hamburger,
+.nav-btn__toggle--hamburger::before,
+.nav-btn__toggle--hamburger::after {
     background-color: var(--color-accent);
 }
 

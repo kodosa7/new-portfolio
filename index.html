@@ -22,36 +22,41 @@
 
         <link rel="stylesheet" href="/style.css" />
     </head>
+
     <body>
         <!-- Header -->
 
-        <header class="header__main">
-            <button class="nav__toggle" aria-label="toggle navigation">
-                <span class="nav__toggle--hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="/#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="/#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="/#work" class="nav__link">My Projects</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="header__main">
+                <button class="nav-btn">
+                    <div class="nav-btn__toggle" aria-label="toggle navigation">
+                        <span class="nav-btn__toggle--hamburger"></span>
+                    </div>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="/#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="/#work" class="nav__link">My Projects</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Introduction -->
+                <!-- Introduction -->
 
-            <div class="container intro">
-                <h1 class="title title--intro">
-                    <span class="first-name">Ella</span>
-                    <br />
-                    <span class="last-name">Šenovská</span>
-                </h1>
-                <p class="subtitle subtitle--intro">Frontend Developer</p>
-                <img src="/img/photo.webp" alt="" class="intro__img" />
+                <div class="container intro">
+                    <h1 class="title title--intro">
+                        <span class="first-name">Ella</span>
+                        <br />
+                        <span class="last-name">Šenovská</span>
+                    </h1>
+                    <p class="subtitle subtitle--intro">Frontend Developer</p>
+                    <img src="/img/photo.webp" alt="" class="intro__img" />
+                </div>
             </div>
         </header>
 
-        <main>
+        <main class="main">
             <!-- About me (Who I am) -->
             <div class="section-wedge"></div>
 
