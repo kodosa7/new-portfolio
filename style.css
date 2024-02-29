@@ -26,7 +26,6 @@
     --shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-/* if more than 799.98px */
 @media (min-width: 800px) {
     :root {
         --font-size-h1: 5.5rem;
@@ -112,10 +111,10 @@ h3 {
 .btn {
     display: inline-block;
     position: relative;
-    padding: 1em 2.5em;
+    padding: 0.5em .5em;
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -126,6 +125,27 @@ h3 {
 
     --effect-width: 20px;
     --effect-width-skewed: 70px;
+}
+
+@media (min-width: 400px) {
+    .btn {
+        padding: 1em .5em;
+        font-size: .75rem;
+    }
+}
+
+@media (min-width: 550px) {
+    .btn {
+        padding: 1em 2em;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .btn {
+        padding: 1em 2.5em;
+        font-size: 1.25rem;
+    }
 }
 
 /* Buttons animation */
@@ -454,8 +474,7 @@ header {
     }
 }
 
-/* if more than 601 */
-@media (min-width: 601px) {
+@media (min-width: 600px) {
     .intro {
         display: grid;
         width: min-content;
@@ -469,7 +488,7 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 200px;
         position: relative;
         z-index: 2;
     }
@@ -496,31 +515,70 @@ header {
     }
 }
 
-/* if less than 960 */
-@media (max-width: 960px) {
-    .title--intro {
-        font-size: 4rem;
-    }
-}
-
-/* if less than 800 */
-@media (max-width: 800px) {
-    .title--intro {
-        font-size: 3rem;
-    }
-}
-
-/* if less than 700 */
-@media (max-width: 700px) {
+@media (min-width: 200px) {
     .title--intro {
         font-size: 2.15rem;
     }
+
+    .subtitle--intro {
+        width: 100%;
+    }
 }
 
-/* if less than 600 */
-@media (max-width: 600px) {
+@media (min-width: 400px) {
+    .title--intro {
+        font-size: 3rem;
+    }
+
+    .subtitle--intro {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .title--intro {
+        font-size: 2.5rem;
+    }
+
+    .subtitle--intro {
+        min-width: 110%;
+    }
+}
+
+@media (min-width: 700px) {
+    .title--intro {
+        font-size: 3rem;
+    }
+
+    .subtitle--intro {
+        min-width: 107.5%;
+    }
+
+    .intro__img {
+        min-width: 250px;
+    }
+}
+
+@media (min-width: 800px) {
     .title--intro {
         font-size: 4rem;
+    }
+
+    .subtitle--intro {
+        min-width: 107.5%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .title--intro {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title--intro {
+        font-size: 5rem;
     }
 }
 
