@@ -251,6 +251,7 @@ h3 {
 
 .intro__title {
     font-weight: var(--font-weight-reg);
+    padding-bottom: 0.5rem;
 }
 
 .intro__title strong {
@@ -354,7 +355,7 @@ h3 {
 @media (min-width: 200px) {
     .intro__title {
         font-size: 2.15rem;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .intro__subtitle {
@@ -377,7 +378,7 @@ h3 {
 @media (min-width: 600px) {
     .intro__title {
         font-size: 2.5rem;
-        margin-bottom: 0.5rem;
+        /* margin-bottom: 0.5rem; */
     }
 
     .intro__subtitle {
@@ -388,7 +389,7 @@ h3 {
 @media (min-width: 700px) {
     .intro__title {
         font-size: 3rem;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
 
     }
 
@@ -404,7 +405,7 @@ h3 {
 @media (min-width: 800px) {
     .intro__title {
         font-size: 4rem;
-        margin-bottom: 0.75rem;
+        /* margin-bottom: 0.75rem; */
 
     }
 
@@ -417,7 +418,7 @@ h3 {
 @media (min-width: 960px) {
     .intro__title {
         font-size: 4.5rem;
-        margin-bottom: 1.25rem;
+        /* margin-bottom: 1.25rem; */
 
     }
 }
@@ -430,9 +431,12 @@ h3 {
 
 /* Header */
 
-.header__main {
-    justify-content: space-between;
+.header {
     display: flex;
+    justify-content: space-between;
+}
+
+.header__main {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
     url("../img/pattern-bg.webp");
     background-size: cover;
