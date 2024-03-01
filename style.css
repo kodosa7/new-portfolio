@@ -50,7 +50,6 @@ body {
     line-height: 1.6;
 }
 
-
 img {
     display: block;
     max-width: 100%;
@@ -60,7 +59,6 @@ img {
 strong {
     font-weight: var(--font-weight-bold);
 }
-
 
 a {
     color: var(--color-accent);
@@ -111,7 +109,7 @@ h3 {
 .btn {
     display: inline-block;
     position: relative;
-    padding: 0.5em .5em;
+    padding: 0.5em 0.5em;
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
     font-size: 1rem;
@@ -129,8 +127,8 @@ h3 {
 
 @media (min-width: 400px) {
     .btn {
-        padding: 1em .5em;
-        font-size: .75rem;
+        padding: 1em 0.5em;
+        font-size: 0.75rem;
     }
 }
 
@@ -215,7 +213,6 @@ h3 {
     margin-bottom: 0.4em;
     align-self: center;
 }
-
 
 .title--about {
     font-family: var(--font-primary);
@@ -318,28 +315,28 @@ h3 {
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
-        "img title"
-        "img subtitle";
+            "img title"
+            "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    
+
     .intro__img {
         grid-area: img;
         min-width: 200px;
         position: relative;
         z-index: 2;
     }
-    
+
     .name {
         display: flex;
         flex-direction: column;
     }
-    
+
     .intro__title {
         grid-area: title;
         margin-top: 2rem;
     }
-    
+
     .intro__subtitle {
         align-self: start;
         grid-column: -1 / 1;
@@ -390,7 +387,6 @@ h3 {
     .intro__title {
         font-size: 3rem;
         /* margin-bottom: 0; */
-
     }
 
     .intro__subtitle {
@@ -406,7 +402,6 @@ h3 {
     .intro__title {
         font-size: 4rem;
         /* margin-bottom: 0.75rem; */
-
     }
 
     .intro__subtitle {
@@ -419,7 +414,6 @@ h3 {
     .intro__title {
         font-size: 4.5rem;
         /* margin-bottom: 1.25rem; */
-
     }
 }
 
@@ -438,7 +432,7 @@ h3 {
 
 .header__main {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
-    url("../img/pattern-bg.webp");
+        url("../img/pattern-bg.webp");
     background-size: cover;
     padding: 1rem;
 }
@@ -701,11 +695,10 @@ h3 {
     .service {
         margin-bottom: 0;
     }
-    
+
     .service + .service {
         margin-left: 2em;
     }
-
 }
 
 /* My Work (My Projects) */
