@@ -254,7 +254,6 @@ h3 {
 @media (min-width: 200px) {
     .intro__title {
         font-size: 2.15rem;
-        /* margin-bottom: 0; */
     }
 }
 
@@ -269,28 +268,24 @@ h3 {
         font-size: 2.5rem;
         grid-area: title;
         margin-top: 2rem;
-        /* margin-bottom: 0.5rem; */
     }
 }
 
 @media (min-width: 700px) {
     .intro__title {
         font-size: 3rem;
-        /* margin-bottom: 0; */
     }
 }
 
 @media (min-width: 800px) {
     .intro__title {
         font-size: 4rem;
-        /* margin-bottom: 0.75rem; */
     }
 }
 
 @media (min-width: 960px) {
     .intro__title {
         font-size: 4.5rem;
-        /* margin-bottom: 1.25rem; */
     }
 }
 
