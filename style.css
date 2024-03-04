@@ -339,7 +339,7 @@ h3 {
 
 @media (min-width: 600px) {
     .intro__subtitle {
-        min-width: 110%;
+        min-width: calc(100% + 2 * 20px);
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
@@ -352,13 +352,13 @@ h3 {
 
 @media (min-width: 700px) {
     .intro__subtitle {
-        min-width: 107.5%;
+        min-width: calc(100% + 2 * 20px);
     }
 }
 
 @media (min-width: 800px) {
     .intro__subtitle {
-        min-width: 107.5%;
+        min-width: calc(100% + 2 * 20px);
         font-size: 1.5rem;
     }
 }
