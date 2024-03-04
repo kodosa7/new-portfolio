@@ -593,19 +593,19 @@ h3 {
     border-radius: 0.1rem;
 }
 
-.about-me .about-me__link {
+.about-me__link {
     color: var(--color-accent-secondary);
     border-bottom: 2px dotted var(--color-accent-secondary);
     text-decoration: none;
 }
 
-.about-me .about-me__link:hover {
+.about-me__link:hover {
     color: var(--color-light);
     border-bottom: 2px dotted var(--color-light);
     text-decoration: none;
 }
 
-.about-me .highlighted-text {
+.highlighted-text {
     font-weight: 700;
     color: var(--color-accent-secondary);
 }
