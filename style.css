@@ -228,7 +228,7 @@ h3 {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 0.5em auto;
+    margin: 0.5em auto;
     background-color: var(--color-light);
     opacity: 0.25;
 }
