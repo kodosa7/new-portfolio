@@ -233,12 +233,7 @@ h3 {
     opacity: 0.25;
 }
 
-.subtitle--work {
-    color: var(--color-accent-secondary);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 1.75em;
-    font-family: var(--font-primary);
-}
+
 
 /* more than 600px always switches to desktop view */
 @media (min-width: 600px) {
@@ -701,6 +696,13 @@ h3 {
     color: var(--color-light);
     text-align: center;
     margin: -5.25rem 0 -3rem 0;
+}
+
+.my-work__subtitle {
+    color: var(--color-accent-secondary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1.75em;
+    font-family: var(--font-primary);
 }
 
 .title--work {
