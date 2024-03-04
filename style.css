@@ -233,14 +233,6 @@ h3 {
     opacity: 0.25;
 }
 
-.subtitle--about {
-    background-color: var(--color-accent-secondary);
-    padding: 0.25em 1em;
-    font-family: var(--font-secondary);
-    margin-bottom: 1em;
-    color: var(--color-dark);
-}
-
 .subtitle--work {
     color: var(--color-accent-secondary);
     font-weight: var(--font-weight-bold);
