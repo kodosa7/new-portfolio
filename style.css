@@ -586,12 +586,6 @@ h3 {
 
 /* About Me Section */
 
-.about-me__buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-}
-
 .about-me {
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -599,7 +593,12 @@ h3 {
     overflow: hidden;
     text-align: center;
     margin: -5rem auto 0 auto;
-    font-family: var(--font-secondary);
+}
+
+.about-me__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
 .about-me__img {
