@@ -316,12 +316,12 @@ h3 {
 }
 
 .intro__subtitle {
-    margin: 0;
-    font-size: var(--font-size-h2);
-    background-color: var(--color-accent);
-    padding: 0.25em 1em;
-    font-family: var(--font-secondary);
+    margin-top: 0;
     margin-bottom: 1em;
+    padding: 0.25em 1em;
+    font-size: var(--font-size-h2);
+    font-family: var(--font-secondary);
+    background-color: var(--color-accent);
     color: var(--color-light);
 }
 
