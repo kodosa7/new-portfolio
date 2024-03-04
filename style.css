@@ -310,10 +310,10 @@ h3 {
         font-size: 5rem;
     }
 }
-
+/* 
 .intro__title strong {
     display: block;
-}
+} */
 
 .intro__subtitle {
     margin-top: 0;
@@ -585,10 +585,10 @@ h3 {
     gap: 2em;
 }
 
-.about-me__img {
+/* .about-me__img {
     box-shadow: var(--shadow);
     border-radius: 0.1rem;
-}
+} */
 
 .about-me__link {
     border-bottom: 2px dotted var(--color-accent-secondary);
@@ -742,10 +742,10 @@ h3 {
     opacity: 0.5;
 }
 
-.portfolio__item:hover .portfolio__text {
+/* .portfolio__item:hover .portfolio__text {
     transform: scale(1.1);
     opacity: 1;
-}
+} */
 
 /* footer */
 
