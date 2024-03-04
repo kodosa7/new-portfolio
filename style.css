@@ -206,9 +206,6 @@ h3 {
     z-index: 1;
 }
 
-
-
-
 /* Intro */
 
 .title {
@@ -232,8 +229,6 @@ h3 {
     background-color: var(--color-light);
     opacity: 0.25;
 }
-
-
 
 /* more than 600px always switches to desktop view */
 @media (min-width: 600px) {
@@ -319,22 +314,15 @@ h3 {
     margin-top: 0;
     margin-bottom: 1em;
     padding: 0.25em 1em;
-    font-size: var(--font-size-h2);
+    font-size: 1rem;
     font-family: var(--font-secondary);
     background-color: var(--color-accent);
     color: var(--color-light);
-}
-
-@media (min-width: 200px) {
-    .intro__subtitle {
-        font-size: 1rem;
-        width: 100%;
-    }
+    width: 100%;
 }
 
 @media (min-width: 400px) {
     .intro__subtitle {
-        width: 100%;
         font-size: 1.25rem;
     }
 }
@@ -342,30 +330,22 @@ h3 {
 @media (min-width: 600px) {
     .intro__subtitle {
         position: relative;
-        min-width: calc(100% + 2 * 20px);
+        min-width: calc(100% + 2.75rem);
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
         text-align: right;
         left: -1.5em;
         margin-top: -1rem;
-        width: calc(100% + 1.5em);
-    }
-}
-
-@media (min-width: 700px) {
-    .intro__subtitle {
-        min-width: calc(100% + 2 * 20px);
     }
 }
 
 @media (min-width: 800px) {
     .intro__subtitle {
-        min-width: calc(100% + 2 * 20px);
+        min-width: calc(100% + 3.25rem);
         font-size: 1.5rem;
     }
 }
-
 
 .intro__img {
     box-shadow: var(--shadow);
