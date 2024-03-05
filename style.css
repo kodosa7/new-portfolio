@@ -568,11 +568,6 @@ h3 {
     gap: 2em;
 }
 
-/* .about-me__img {
-    box-shadow: var(--shadow);
-    border-radius: 0.1rem;
-} */
-
 .about-me__link {
     border-bottom: 2px dotted var(--color-accent-secondary);
     color: var(--color-accent-secondary);
@@ -724,13 +719,6 @@ h3 {
     transform: scale(105%);
     opacity: 0.5;
 }
-
-/* .portfolio__item:hover .portfolio__text {
-    transform: scale(1.1);
-    opacity: 1;
-} */
-
-/* footer */
 
 .footer {
     padding: 2.5em 0;
