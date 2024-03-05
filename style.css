@@ -107,10 +107,13 @@ h3 {
 /* Buttons */
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
     position: relative; /* position relative to the slide effect */
     padding: 0.5em 0.5em;
     font-family: var(--font-secondary);
@@ -130,24 +133,9 @@ h3 {
 
 @media (min-width: 400px) {
     .btn {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         padding-top: 1em;
         padding-bottom: 1em;
-        font-size: 0.75rem;
-    }
-}
-
-@media (min-width: 550px) {
-    .btn {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 700px) {
-    .btn {
-        font-size: 1.25rem;
+        font-size: clamp(0.75rem, 0.083rem + 2.67vw, 1.25rem);
     }
 }
 
@@ -522,6 +510,7 @@ h3 {
 .about-me__buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2em;
 }
 
