@@ -62,7 +62,7 @@ strong {
 
 a {
     color: var(--color-accent);
-    text-decoration: none;
+    text-underline-offset: 0.25rem;
     transition: 250ms;
 }
 
@@ -109,7 +109,7 @@ h3 {
 .btn {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: auto;
+    flex-basis: 18rem;
     position: relative; /* position relative to the slide effect */
     padding: 0.5em 0.5em;
     font-family: var(--font-secondary);
@@ -509,27 +509,17 @@ h3 {
 }
 
 .about-me__link {
-    border-bottom: 2px dotted var(--color-accent-secondary);
     color: var(--color-accent-secondary);
-    text-decoration: none;
+    text-decoration-style: dotted;
 }
 
 .about-me__link:hover {
-    border-bottom: 2px dotted var(--color-light);
     color: var(--color-light);
-    text-decoration: none;
 }
 
 .highlighted-text {
     font-weight: 700;
     color: var(--color-accent-secondary);
-}
-
-.about-me .btn,
-.about-me .btn:hover,
-.about-me .btn:focus {
-    width: 18rem;
-    border: 0;
 }
 
 .about-me__body {
@@ -661,7 +651,8 @@ h3 {
 }
 
 .footer {
-    padding: 2.5em 0;
+    padding-top: 2.5em;
+    padding-bottom: 2.5rem;
     text-align: center;
     font-size: var(--font-size-h2);
     background-color: var(--color-dark);
@@ -669,24 +660,23 @@ h3 {
 }
 
 .footer a {
-    text-decoration: none;
     color: inherit;
 }
 
 .footer__link {
+    color: inherit;
     font-weight: var(--font-weight-bold);
-    border-bottom: 5px dotted var(--color-accent-secondary);
-    text-decoration: none;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.75rem;
+    color: var(--color-accent-secondary);
+}
+
+.footer__link:hover {
+    color: var(--color-light);
 }
 
 .social-list__link:hover {
     opacity: 0.7;
-}
-
-.footer__link:hover {
-    border-bottom: 5px dotted var(--color-light);
-    color: var(--color-light);
-    text-decoration: none;
 }
 
 .social-list {
