@@ -315,21 +315,8 @@ h3 {
     box-shadow: var(--shadow);
     opacity: 1;
     border-radius: 50%;
-}
-
-@media (min-width: 600px) {
-    .intro__img {
-        grid-area: img;
-        min-width: 200px;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-@media (min-width: 700px) {
-    .intro__img {
-        min-width: 250px;
-    }
+    min-width:clamp(12.5rem, 9.375rem + 8.33vw, 15.625rem);
+    z-index: 2;
 }
 
 .intro__subtitle {
