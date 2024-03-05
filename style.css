@@ -107,10 +107,6 @@ h3 {
 /* Buttons */
 
 .btn {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -186,12 +182,10 @@ h3 {
     color: var(--color-dark);
 }
 
-.btn--projects:focus,
-.btn--projects:hover,
-.btn--resume:focus,
-.btn--resume:hover {
+.btn:focus,
+.btn:hover {
     color: var(--color-dark);
-    transform: scale(1.01, 1.01);
+    transform: scale(1.01);
 }
 
 .btn__text {
