@@ -101,7 +101,7 @@ h3 {
 }
 
 .container {
-    padding: 5em 2em;
+    padding: 5rem 2rem;
 }
 
 /* Buttons */
@@ -260,49 +260,13 @@ h3 {
 .intro__title {
     font-weight: var(--font-weight-reg);
     padding-bottom: 0.5rem;
-}
-
-@media (min-width: 200px) {
-    .intro__title {
-        font-size: 2.15rem;
-    }
-}
-
-@media (min-width: 400px) {
-    .intro__title {
-        font-size: 3rem;
-    }
+    font-size: clamp(2rem, 1rem + 5vw, 5rem);
 }
 
 @media (min-width: 600px) {
     .intro__title {
-        font-size: 2.5rem;
         margin-top: 2rem;
         grid-area: title;
-    }
-}
-
-@media (min-width: 700px) {
-    .intro__title {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 800px) {
-    .intro__title {
-        font-size: 4rem;
-    }
-}
-
-@media (min-width: 960px) {
-    .intro__title {
-        font-size: 4.5rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .intro__title {
-        font-size: 5rem;
     }
 }
 
@@ -667,7 +631,7 @@ h3 {
 /* My Work (My Projects) */
 
 .my-work {
-    margin: -5.25rem -3rem;
+    margin: -5.25rem 0;
     text-align: center;
     background-color: var(--color-dark);
     color: var(--color-light);
