@@ -1,0 +1,41 @@
+/* About Me Section */
+
+.about-me {
+    margin: -5rem auto 0 auto;
+    padding-bottom: 5.25rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.about-me__buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.about-me__link {
+    color: var(--color-accent-secondary);
+    text-decoration-style: dotted;
+}
+
+.about-me__link:hover {
+    color: var(--color-light);
+}
+
+.highlighted-text {
+    font-weight: 700;
+    color: var(--color-accent-secondary);
+}
+
+.about-me__body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    max-width: 900px;
+    text-align: left;
+    font-family: var(--font-secondary);
+}

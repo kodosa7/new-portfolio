@@ -1,0 +1,61 @@
+/*  My services section (What I Do) */
+
+.my-services {
+    text-align: center;
+    margin: -1.5rem auto -1.5rem auto;
+}
+
+.my-services h3 {
+    font-family: var(--font-primary);
+}
+
+.my-services .highlighted-text {
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.title--services {
+    position: relative;
+    margin-top: -2.5rem;
+    color: var(--color-dark);
+}
+
+.title--services::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 0.75em auto;
+    background-color: var(--color-dark);
+    opacity: 0.25;
+}
+
+.services {
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+    }
+}
+
+.service {
+    max-width: 400px;
+    margin: 0 auto 2em;
+    font-family: var(--font-secondary);
+}
+
+@media (min-width: 800px) {
+    .service {
+        margin-bottom: 0;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}

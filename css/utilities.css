@@ -1,0 +1,34 @@
+.tech-icon {
+    padding-right: 1rem;
+    margin-top: 0.35rem;
+    font-size: 2rem;
+    color: var(--color-dark-secondary);
+}
+
+.section-wedge {
+    position: relative;
+    top: -2.25rem;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-dark);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg) skew(-1deg);
+}
+
+@media (min-width: 2250px) {
+    .section-wedge {
+        transform: none;
+    }
+}
+
+.sr-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

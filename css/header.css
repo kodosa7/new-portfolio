@@ -1,0 +1,41 @@
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__main {
+    padding: 1rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
+        url("/img/pattern-bg.webp");
+    background-size: cover;
+}
+
+.my-services::before {
+    content: "";
+    position: absolute;
+    max-width: 800px;
+    width: 800px;
+    height: 800px;
+    margin-left: -76rem;
+    z-index: -2;
+    background-color: var(--color-accent-light);
+    border-radius: 50%;
+    animation: bubbleWobble 10s infinite ease-in-out;
+}
+
+@keyframes bubbleWobble {
+    0% {
+        transform: translateX(-0.5rem) translateY(-0.5rem);
+    }
+    33% {
+        transform: translateX(0.5rem) translateY(-0.5rem);
+    }
+    66% {
+        transform: translateX(-0.5rem) translateY(0.5rem);
+    }
+    100% {
+        transform: translateX(-0.5rem) translateY(-0.5rem);
+    }
+}
