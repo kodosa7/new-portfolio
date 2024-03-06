@@ -25,9 +25,18 @@
     }
 }
 
-.highlighted {
+.highlighted--light {
     font-weight: 700;
     color: var(--color-accent-secondary);
+}
+
+.highlighted--dark {
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.half--opacity {
+    opacity: 0.5;
 }
 
 .sr-heading {
