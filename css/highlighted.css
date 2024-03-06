@@ -1,0 +1,12 @@
+.highlighted {
+    font-weight: 700;
+}
+
+
+.highlighted--light {
+    color: var(--color-accent-secondary);
+}
+
+.highlighted--dark {
+    color: var(--color-accent);
+}

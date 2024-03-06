@@ -25,17 +25,12 @@
     }
 }
 
-.highlighted--light {
-    font-weight: 700;
-    color: var(--color-accent-secondary);
-}
 
-.highlighted--dark {
-    font-weight: 700;
-    color: var(--color-accent);
-}
 
-.lower--opacity {
+
+/* nechat */
+
+.lower-opacity {
     opacity: 0.8;
 }
 

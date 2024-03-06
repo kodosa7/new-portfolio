@@ -22,9 +22,6 @@
     opacity: 0.25;
 }
 
-.intro {
-}
-
 /* more than 600px always switches to desktop view */
 @media (min-width: 600px) {
     .intro {

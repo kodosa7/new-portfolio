@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.header__background--pattern {
+.header--background-pattern {
     padding: 1rem;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(219, 217, 197, 0.73)),
         url("/img/pattern-bg.webp");
