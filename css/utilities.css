@@ -35,8 +35,8 @@
     color: var(--color-accent);
 }
 
-.half--opacity {
-    opacity: 0.5;
+.lower--opacity {
+    opacity: 0.8;
 }
 
 .sr-heading {
