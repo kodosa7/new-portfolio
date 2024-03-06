@@ -25,11 +25,6 @@
     color: var(--color-light);
 }
 
-.highlighted-text {
-    font-weight: 700;
-    color: var(--color-accent-secondary);
-}
-
 .about-me__body {
     display: flex;
     flex-direction: column;

@@ -21,6 +21,11 @@
     }
 }
 
+.highlighted {
+    font-weight: 700;
+    color: var(--color-accent-secondary);
+}
+
 .sr-heading {
     position: absolute;
     width: 1px;
