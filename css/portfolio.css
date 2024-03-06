@@ -1,60 +1,92 @@
-/* Individual portfolio item styles */
+/* My Work (My Projects) */
 
-.portfolio-intro {
-    padding: 5em 2em 2em 2em;
+.portfolio {
+    margin: -5.25rem 0;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
-.portfolio-icon {
-    padding-right: 1rem;
-    margin-top: 0.35rem;
-    font-size: 2rem;
-    color: var(--color-dark-secondary);
+.portfolio__subtitle {
+    margin-bottom: 1.75em;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent-secondary);
 }
 
-.portfolio-item-individual {
-    max-width: 1000px;
+.title--work {
+    margin-top: -2rem;
+    color: var(--color-light);
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2em;
     margin: 0 auto;
-    padding: 0 2em 4em;
+    max-width: 1000px;
     font-family: var(--font-secondary);
 }
 
-.portfolio-item-individual p {
-    max-width: 600px;
-    margin: 1.5em auto;
-}
-
-.portfolio-item-individual .buttons {
+.portfolio-list__item {
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-}
-
-.portfolio-item-individual .button {
-    margin-right: 0.8em;
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 0.25em 1em;
-    border: 1px solid var(--color-dark);
-    color: var(--color-dark);
-    transition: 0.25s;
-}
-
-.portfolio-item-individual .button:hover {
-    color: var(--color-light);
+    flex-direction: column;
+    flex-flow: column-reverse;
+    border-radius: 0.1rem;
     background-color: var(--color-dark);
 }
 
-.portfolio-item-individual .link {
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 2px dotted var(--color-accent);
-    color: var(--color-accent);
-    transition: 0.25s;
+.portfolio-list__img {
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
-.portfolio-item-individual .link:hover {
-    color: var(--color-dark-secondary);
-    border-bottom: 2px dotted var(--color-accent-light);
+.portfolio-list__img:hover,
+.portfolio-list__item:focus .portfolio-list__img {
+    transform: scale(105%);
+    opacity: 0.5;
+}
+
+.footer {
+    padding-top: 2.5em;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-size: var(--font-size-h2);
+    background-color: var(--color-dark);
+    color: var(--color-accent-secondary);
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer__link {
+    color: inherit;
+    font-weight: var(--font-weight-bold);
+    text-decoration-style: dotted;
+    text-underline-offset: 0.75rem;
+    color: var(--color-accent-secondary);
+}
+
+.footer__link:hover {
+    color: var(--color-light);
+}
+
+.social-list__link:hover {
+    opacity: 0.7;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0.75em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 0.5em;
+}
+
+.social-list__link {
+    padding: 0.5em;
 }

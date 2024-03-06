@@ -1,0 +1,60 @@
+/* Individual portfolio item styles */
+
+.projects-intro {
+    padding: 5em 2em 2em 2em;
+}
+
+.projects-icon {
+    padding-right: 1rem;
+    margin-top: 0.35rem;
+    font-size: 2rem;
+    color: var(--color-dark-secondary);
+}
+
+.projects-item-individual {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2em 4em;
+    font-family: var(--font-secondary);
+}
+
+.projects-item-individual p {
+    max-width: 600px;
+    margin: 1.5em auto;
+}
+
+.projects-item-individual .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.projects-item-individual .button {
+    margin-right: 0.8em;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    border: 1px solid var(--color-dark);
+    color: var(--color-dark);
+    transition: 0.25s;
+}
+
+.projects-item-individual .button:hover {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.projects-item-individual .link {
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px dotted var(--color-accent);
+    color: var(--color-accent);
+    transition: 0.25s;
+}
+
+.projects-item-individual .link:hover {
+    color: var(--color-dark-secondary);
+    border-bottom: 2px dotted var(--color-accent-light);
+}
