@@ -11,19 +11,19 @@
     color: var(--color-dark-secondary);
 }
 
-.projects-item-individual {
+.projects-item__individual {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2em 4em;
     font-family: var(--font-secondary);
 }
 
-.projects-item-individual p {
+.projects-item__individual p {
     max-width: 600px;
     margin: 1.5em auto;
 }
 
-.projects-item-individual .buttons {
+.projects-item__individual .buttons {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -31,7 +31,7 @@
     max-width: 600px;
 }
 
-.projects-item-individual .button {
+.projects-item__individual .button {
     margin-right: 0.8em;
     font-size: 1rem;
     text-decoration: none;
@@ -41,12 +41,12 @@
     transition: 0.25s;
 }
 
-.projects-item-individual .button:hover {
+.projects-item__individual .button:hover {
     color: var(--color-light);
     background-color: var(--color-dark);
 }
 
-.projects-item-individual .link {
+.projects-item__individual .link {
     font-weight: 700;
     text-decoration: none;
     border-bottom: 2px dotted var(--color-accent);
@@ -54,7 +54,7 @@
     transition: 0.25s;
 }
 
-.projects-item-individual .link:hover {
+.projects-item__individual .link:hover {
     color: var(--color-dark-secondary);
     border-bottom: 2px dotted var(--color-accent-light);
 }
