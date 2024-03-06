@@ -4,6 +4,13 @@
     padding: 5em 2em 2em 2em;
 }
 
+.portfolio-icon {
+    padding-right: 1rem;
+    margin-top: 0.35rem;
+    font-size: 2rem;
+    color: var(--color-dark-secondary);
+}
+
 .portfolio-item-individual {
     max-width: 1000px;
     margin: 0 auto;
