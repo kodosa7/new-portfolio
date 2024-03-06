@@ -21,6 +21,12 @@
     --effect-width-skewed: 70px;
 }
 
+.btn:focus,
+.btn:hover {
+    color: var(--color-dark);
+    transform: scale(1.01);
+}
+
 /* Buttons animation */
 
 .btn::before,
@@ -58,6 +64,12 @@
     width: 100%;
 }
 
+.btn__text {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
 .btn--resume {
     background-color: var(--color-dark-secondary);
     color: var(--color-accent-light);
@@ -66,16 +78,4 @@
 .btn--projects {
     background-color: var(--color-accent-secondary);
     color: var(--color-dark);
-}
-
-.btn:focus,
-.btn:hover {
-    color: var(--color-dark);
-    transform: scale(1.01);
-}
-
-.btn__text {
-    display: block;
-    position: relative;
-    z-index: 1;
 }
