@@ -110,10 +110,10 @@ h3 {
     flex-shrink: 1;
     flex-basis: 18rem;
     position: relative; /* position relative to the slide effect */
-    padding: 0.5em 0.5em;
+    padding: 1em 0.5em;
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
-    font-size: 0.75rem;
+    font-size: clamp(1rem, 0.667rem + 1.33vw, 1.25rem); /* 400px - 700px*/
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -124,14 +124,6 @@ h3 {
 
     --effect-width: 20px;
     --effect-width-skewed: 70px;
-}
-
-@media (min-width: 400px) {
-    .btn {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: clamp(0.75rem, 0.083rem + 2.67vw, 1.25rem);
-    }
 }
 
 /* Buttons animation */
