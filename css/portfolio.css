@@ -28,6 +28,10 @@
     font-family: var(--font-secondary);
 }
 
+.portfolio-list__title {
+    opacity: 0.8;
+}
+
 .portfolio-list__item {
     display: flex;
     flex-direction: column;
