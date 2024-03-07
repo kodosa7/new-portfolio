@@ -42,13 +42,13 @@
     color: var(--color-accent);
 }
 
-.title--services {
+.my-services__title {
     position: relative;
     margin-top: -2.5rem;
     color: var(--color-dark);
 }
 
-.title--services::after {
+.my-services__title::after {
     content: "";
     display: block;
     width: 2em;

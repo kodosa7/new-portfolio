@@ -5,22 +5,7 @@
     align-self: center;
 }
 
-.title--about {
-    position: relative;
-    margin-top: -2.5rem;
-    font-family: var(--font-primary);
-    color: var(--color-light);
-}
 
-.title--about::after {
-    content: "";
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto;
-    background-color: var(--color-light);
-    opacity: 0.25;
-}
 
 /* more than 600px always switches to desktop view */
 @media (min-width: 600px) {
