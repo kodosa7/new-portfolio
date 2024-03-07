@@ -94,10 +94,10 @@
     color: var(--color-dark);
     font-weight: 400;
     text-transform: uppercase;
-    animation: firstName 1.5s ease-in;
+    animation: intro__firstName 1.5s ease-in;
 }
 
-@keyframes firstName {
+@keyframes intro__firstName {
     from {
         margin: -0.5rem;
     }
@@ -111,10 +111,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-dark);
-    animation: lastName 1.5s ease-in;
+    animation: intro__lastName 1.5s ease-in;
 }
 
-@keyframes lastName {
+@keyframes intro__lastName {
     from {
         opacity: 0.5;
     }

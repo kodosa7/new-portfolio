@@ -15,10 +15,10 @@
     z-index: -2;
     background-color: var(--color-accent-light);
     border-radius: 50%;
-    animation: bubbleWobble 10s infinite ease-in-out;
+    animation: my-services__bubbleWobble 10s infinite ease-in-out;
 }
 
-@keyframes bubbleWobble {
+@keyframes my-services__bubbleWobble {
     0% {
         transform: translateX(-0.5rem) translateY(-0.5rem);
     }
