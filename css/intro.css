@@ -29,19 +29,14 @@
 
 .intro__title {
     font-weight: var(--font-weight-reg);
-    padding-bottom: 0.5rem;
     font-size: clamp(2rem, 0.625rem + 5vw, 5rem);
+    grid-area: title;
 }
 
 @media (min-width: 600px) {
     .intro__title {
-        margin-top: 2rem;
-        grid-area: title;
+        margin-top: 3.125rem;
     }
-}
-
-.intro__title strong {
-    display: block;
 }
 
 .intro__subtitle {
@@ -49,7 +44,6 @@
     margin-top: 0;
     margin-bottom: 1em;
     padding: 0.25em 1em;
-    /* font-size: 1rem; */
     font-family: var(--font-secondary);
     background-color: var(--color-accent);
     color: var(--color-light);
