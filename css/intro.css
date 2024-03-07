@@ -24,7 +24,22 @@
     top: -20rem;
     background-color: var(--color-accent-light);
     border-radius: 50%;
-    animation: bubbleWobble 10s infinite ease-in-out;
+    animation: intro__bubbleWobble 10s infinite ease-in-out;
+}
+
+@keyframes intro__bubbleWobble {
+    0% {
+        transform: translateX(-0.5rem) translateY(-0.5rem);
+    }
+    33% {
+        transform: translateX(0.5rem) translateY(-0.5rem);
+    }
+    66% {
+        transform: translateX(-0.5rem) translateY(0.5rem);
+    }
+    100% {
+        transform: translateX(-0.5rem) translateY(-0.5rem);
+    }
 }
 
 .intro__title {
