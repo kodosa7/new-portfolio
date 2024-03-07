@@ -9,23 +9,19 @@
     background-color: transparent;
 }
 
-.nav-open .nav {
-    transform: translateX(0);
-}
-
-.nav-open .nav-btn {
+.nav-btn--open {
     position: fixed;
 }
 
-.nav-open .nav-btn__hamburger {
+.nav-btn--open .nav-btn__hamburger {
     transform: rotate(0.625turn);
 }
 
-.nav-open .nav-btn__hamburger::before {
+.nav-btn--open .nav-btn__hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .nav-btn__hamburger::after {
+.nav-btn--open .nav-btn__hamburger::after {
     opacity: 0;
 }
 
@@ -64,3 +60,4 @@
 .nav-btn__hamburger::after {
     background-color: var(--color-accent);
 }
+
