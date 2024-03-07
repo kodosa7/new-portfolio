@@ -8,6 +8,5 @@ navToggle.addEventListener("click", () => {
 navLinks.addEventListener("click", (e) => {
     if (e.target.matches(".nav__link")) {
         document.body.classList.remove("nav-open");
-        console.log("now");
     }
 });
