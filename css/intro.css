@@ -31,12 +31,11 @@
     font-weight: var(--font-weight-reg);
     font-size: clamp(2rem, 0.625rem + 5vw, 5rem);
     grid-area: title;
+    align-self: center;
 }
 
-@media (min-width: 600px) {
-    .intro__title {
-        margin-top: 3.125rem;
-    }
+.intro__type {
+    display: block;
 }
 
 .intro__subtitle {
