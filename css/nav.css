@@ -35,7 +35,7 @@
     color: var(--color-accent-secondary);
 }
 
-.nav-btn__toggle {
+.nav-btn {
     position: absolute;
     padding: 0.5em;
     right: 1em;
@@ -50,54 +50,54 @@
     transform: translateX(0);
 }
 
-.nav-open .nav-btn__toggle {
+.nav-open .nav-btn {
     position: fixed;
 }
 
-.nav-open .nav-btn__toggle--hamburger {
+.nav-open .nav-btn--hamburger {
     transform: rotate(0.625turn);
 }
 
-.nav-open .nav-btn__toggle--hamburger::before {
+.nav-open .nav-btn--hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .nav-btn__toggle--hamburger::after {
+.nav-open .nav-btn--hamburger::after {
     opacity: 0;
 }
 
-.nav-btn__toggle--hamburger {
+.nav-btn--hamburger {
     display: block;
     position: relative;
 }
 
-.nav-btn__toggle--hamburger,
-.nav-btn__toggle--hamburger::before,
-.nav-btn__toggle--hamburger::after {
+.nav-btn--hamburger,
+.nav-btn--hamburger::before,
+.nav-btn--hamburger::after {
     width: 2rem;
     height: 3px;
     border-radius: 1rem;
     transition: transform 0.25s ease-in-out;
 }
 
-.nav-btn__toggle--hamburger::before,
-.nav-btn__toggle--hamburger::after {
+.nav-btn--hamburger::before,
+.nav-btn--hamburger::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
 }
 
-.nav-btn__toggle--hamburger::before {
+.nav-btn--hamburger::before {
     top: 6px;
 }
 
-.nav-btn__toggle--hamburger::after {
+.nav-btn--hamburger::after {
     bottom: 6px;
 }
 
-.nav-btn__toggle--hamburger,
-.nav-btn__toggle--hamburger::before,
-.nav-btn__toggle--hamburger::after {
+.nav-btn--hamburger,
+.nav-btn--hamburger::before,
+.nav-btn--hamburger::after {
     background-color: var(--color-accent);
 }
