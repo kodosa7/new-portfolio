@@ -2,7 +2,7 @@
     padding: 5rem 2rem;
 }
 
-.section-wedge {
+.wedge {
     position: relative;
     top: -2.25rem;
     width: 100%;
@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 2250px) {
-    .section-wedge {
+    .wedge {
         transform: none;
     }
 }
