@@ -47,7 +47,6 @@ body {
     margin: 0;
     font-family: var(--font-primary);
     font-size: var(--font-size-body);
-    line-height: 1.6;
 }
 
 img {
@@ -72,6 +71,10 @@ a:hover {
 :focus {
     outline: 3px solid var(--color-accent);
     outline-offset: 3px;
+}
+
+p {
+    line-height: 1.6;
 }
 
 /* Typography */
