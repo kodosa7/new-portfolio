@@ -5,16 +5,16 @@
     color: var(--color-light);
 }
 
+.portfolio__title {
+    margin-top: -2rem;
+    color: var(--color-light);
+}
+
 .portfolio__subtitle {
     margin-bottom: 1.75em;
     font-family: var(--font-primary);
     font-weight: var(--font-weight-bold);
     color: var(--color-accent-secondary);
-}
-
-.title--work {
-    margin-top: -2rem;
-    color: var(--color-light);
 }
 
 .portfolio-list {
