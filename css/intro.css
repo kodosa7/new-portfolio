@@ -1,12 +1,5 @@
 /* Intro */
 
-.title {
-    margin-bottom: 0.4em;
-    align-self: center;
-}
-
-
-
 /* more than 600px always switches to desktop view */
 @media (min-width: 600px) {
     .intro {
