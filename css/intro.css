@@ -45,6 +45,7 @@
 }
 
 .intro__subtitle {
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 1em;
     padding: 0.25em 1em;
@@ -87,10 +88,6 @@
     border-radius: 50%;
     min-width: clamp(10rem, 4rem + 16vw, 16rem);
     z-index: 2;
-}
-
-.intro__subtitle {
-    display: inline-block;
 }
 
 .intro__first-name {
