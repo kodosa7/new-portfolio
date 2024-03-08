@@ -51,9 +51,9 @@
 .my-services__title::after {
     content: "";
     display: block;
-    width: 2em;
+    width: 4.5rem;
     height: 1px;
-    margin: 0.5em auto 0.75em auto;
+    margin: 1rem auto 2rem auto;
     background-color: var(--color-dark);
     opacity: 0.25;
 }

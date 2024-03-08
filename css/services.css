@@ -1,7 +1,7 @@
 /* Services list (inside My services) */
 
 .services {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     text-align: left;
 }
 
@@ -16,7 +16,8 @@
 
 .services__service {
     max-width: 400px;
-    margin: 0 auto 2em;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
     font-family: var(--font-secondary);
 }
 
@@ -26,6 +27,6 @@
     }
 
     .services__service + .services__service {
-        margin-left: 2em;
+        margin-left: 2rem;
     }
 }

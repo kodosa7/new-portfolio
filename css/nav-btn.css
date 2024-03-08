@@ -2,9 +2,9 @@
 
 .nav-btn {
     position: absolute;
-    padding: 0.5em;
-    right: 1em;
-    top: 1em;
+    padding: 0.5rem;
+    right: 1.25rem;
+    top: 1.25rem;
     z-index: 1000;
     cursor: pointer;
     border: 0;
