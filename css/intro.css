@@ -1,6 +1,6 @@
 /* Intro */
 
-/* more than 600px always switches to desktop view */
+/* more than 600px -> switch to desktop view */
 @media (min-width: 600px) {
     .intro {
         display: grid;
