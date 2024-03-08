@@ -2,7 +2,7 @@
 
 .my-services {
     text-align: center;
-    margin: -1.5rem auto -1.5rem auto;
+    margin: -1.5rem auto;
 }
 
 .my-services::before {
@@ -33,14 +33,14 @@
     }
 }
 
-.my-services h3 {
+/* .my-services h3 {
     font-family: var(--font-primary);
 }
 
 .my-services .highlighted-text {
     font-weight: 700;
     color: var(--color-accent);
-}
+} */
 
 .my-services__title {
     position: relative;
@@ -56,4 +56,38 @@
     margin: 1rem auto 2rem auto;
     background-color: var(--color-dark);
     opacity: 0.25;
+}
+
+/* Services list (inside My services) */
+
+.services {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+    }
+}
+
+.my-services__service {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    font-family: var(--font-secondary);
+}
+
+@media (min-width: 800px) {
+    .services__service {
+        margin-bottom: 0;
+    }
+
+    .services__service + .services__service {
+        margin-left: 2rem;
+    }
 }
