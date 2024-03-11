@@ -66,7 +66,7 @@
 .my-services__service {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 400px;
+    flex-basis: 25rem;
 }
 
 .my-services__text {
