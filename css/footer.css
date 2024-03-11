@@ -14,7 +14,6 @@
 }
 
 .footer__link {
-    color: inherit;
     font-weight: var(--font-weight-bold);
     text-decoration-style: dotted;
     text-underline-offset: 0.75rem;
