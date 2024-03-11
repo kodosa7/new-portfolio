@@ -47,7 +47,7 @@
     flex-direction: column;
     margin: 0 auto;
     padding-bottom: 3rem;
-    max-width: 900px;
+    max-width: 56.25rem;
     text-align: left;
     font-family: var(--font-secondary);
 }

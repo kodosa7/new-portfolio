@@ -1,7 +1,7 @@
 /* Project - single project page */
 
 .project {
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4.5rem;
@@ -16,7 +16,7 @@
 }
 
 .project__description {
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 2rem auto;
 }
 
@@ -25,7 +25,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
+    max-width: 37.5rem;
 }
 
 .project__button {
