@@ -25,10 +25,10 @@
     top: -20rem;
     background-color: var(--color-accent-light);
     border-radius: 50%;
-    animation: intro__bubbleWobble 10s infinite ease-in-out;
+    animation: intro__bubble 10s infinite ease-in-out;
 }
 
-@keyframes intro__bubbleWobble {
+@keyframes intro__bubble {
     0% {
         transform: translateX(-0.5rem) translateY(-0.5rem);
     }
@@ -102,10 +102,10 @@
     color: var(--color-dark);
     font-weight: 400;
     text-transform: uppercase;
-    animation: intro__firstName 1.5s ease-in;
+    animation: intro__first-name 1.5s ease-in;
 }
 
-@keyframes intro__firstName {
+@keyframes intro__first-name {
     from {
         margin: -0.5rem;
     }
@@ -119,10 +119,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--color-dark);
-    animation: intro__lastName 1.5s ease-in;
+    animation: intro__last-name 1.5s ease-in;
 }
 
-@keyframes intro__lastName {
+@keyframes intro__last-name {
     from {
         opacity: 0.5;
     }
