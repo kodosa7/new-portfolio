@@ -57,5 +57,5 @@
 
 .projects-item__individual .link:hover {
     color: var(--color-dark-secondary);
-    border-bottom: 2px dotted var(--color-accent-light);
+    border-bottom-color: var(--color-accent-light);
 }
