@@ -30,16 +30,16 @@
     font-family: var(--font-secondary);
 }
 
-.portfolio__name {
-    opacity: 0.8;
-}
-
 .portfolio__item {
     display: flex;
     flex-direction: column;
     flex-flow: column-reverse;
     border-radius: 0.1rem;
     background-color: var(--color-dark);
+}
+
+.portfolio__name {
+    opacity: 0.8;
 }
 
 .portfolio__img {
