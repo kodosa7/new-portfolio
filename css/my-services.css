@@ -7,10 +7,9 @@
 .my-services::before {
     content: "";
     position: absolute;
-    max-width: 800px;
     width: 800px;
     height: 800px;
-    margin-left: -76rem;
+    left: -700px;
     z-index: -2;
     background-color: var(--color-accent-light);
     border-radius: 50%;
