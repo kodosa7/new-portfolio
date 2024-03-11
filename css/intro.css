@@ -130,3 +130,7 @@
         opacity: 1;
     }
 }
+
+.intro__project-detail {
+    padding-top: 6rem;
+}
