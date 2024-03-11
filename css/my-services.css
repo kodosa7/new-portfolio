@@ -51,14 +51,14 @@
 
 .my-services__services {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 5.5rem;
-    row-gap: 2rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    margin-bottom: 2rem;
+    max-width: 62.5rem;
 }
 
 /* Services list (inside My services) */
@@ -71,15 +71,5 @@
 
 .my-services__text {
     font-family: var(--font-secondary);
-    margin-bottom: 1.25rem;
-}
-
-@media (min-width: 800px) {
-    .my-services__service {
-        margin-bottom: 0;
-    }
-
-    .my-services__service + .my-services__service {
-        margin-left: 2rem;
-    }
+    max-width: 80ch;
 }
