@@ -43,6 +43,10 @@
     }
 }
 
+.intro__project-detail {
+    padding-top: 6rem;
+}
+
 .intro__title {
     font-weight: var(--font-weight-reg);
     font-size: clamp(2rem, 0.625rem + 5vw, 5rem);
@@ -131,6 +135,3 @@
     }
 }
 
-.intro__project-detail {
-    padding-top: 6rem;
-}
