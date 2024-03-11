@@ -16,7 +16,7 @@
     color: var(--color-dark-secondary);
 }
 
-.project p {
+.project__description {
     max-width: 600px;
     margin: 2rem auto;
 }
