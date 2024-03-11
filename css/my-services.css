@@ -63,12 +63,12 @@
 /* Services list (inside My services) */
 
 .my-services__service {
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 25rem;
+    max-width: 35rem;
 }
 
 .my-services__text {
     font-family: var(--font-secondary);
-    max-width: 80ch;
 }
