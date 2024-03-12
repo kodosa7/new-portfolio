@@ -2,35 +2,35 @@
 
 .footer {
     padding-top: 4rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3.5rem;
     text-align: center;
     font-size: var(--font-size-h2);
     background-color: var(--color-dark);
     color: var(--color-accent-secondary);
 }
 
-.footer a {
-    color: inherit;
-}
-
-.footer__link {
+.footer__email {
     font-weight: var(--font-weight-bold);
     text-decoration-style: dotted;
     text-underline-offset: 0.75rem;
-    color: var(--color-accent-secondary);
+    padding: 0.375rem 1rem;
 }
 
-.footer__link:hover {
+.footer__email:hover {
     color: var(--color-light);
 }
 
-.footer__social-list {
+.footer__icons {
     display: flex;
     justify-content: center;
-    margin-top: 1.75rem;
-    column-gap: 2rem;
+    margin-top: 1.5rem;
+    column-gap: 1.25rem;
 }
 
-.footer__social-list--link:hover {
+.footer__link {
+    padding: 0.375rem 1rem;
+}
+
+.footer__link:hover {
     opacity: 0.7;
 }

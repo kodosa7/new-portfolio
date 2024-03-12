@@ -59,13 +59,9 @@ strong {
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--color-accent-secondary);
     text-underline-offset: 0.25rem;
     transition: 250ms;
-}
-
-a:hover {
-    color: var(--color-accent-light);
 }
 
 :focus {
