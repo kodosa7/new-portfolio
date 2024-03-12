@@ -42,12 +42,9 @@
     opacity: 0.8;
 }
 
-.portfolio__img {
-    transition: transform 0.25s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-}
-
-.portfolio__img:hover,
+.portfolio__link:hover,
 .portfolio__link:focus {
+    transition: transform 0.25s cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
     transform: scale(105%);
     opacity: 0.5;
 }
