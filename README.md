@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-## The brief introduction of my finished Frond-End projects
+## The brief introduction of my Front-End projects
 
 This is the web portfolio summarizing my frontend development knowledge
 with the goal of finding a job as a frontend web developer.
