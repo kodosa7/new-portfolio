@@ -41,7 +41,7 @@
 .my-services__title::after {
     content: "";
     display: block;
-    width: 4.5rem;
+    width: 2em;
     height: 1px;
     margin: 1rem auto 2rem;
     background-color: var(--color-dark);
