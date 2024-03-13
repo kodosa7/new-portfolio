@@ -6,3 +6,11 @@
 .highlighted--light {
     color: var(--color-accent-secondary);
 }
+
+a.highlighted {
+    text-decoration-style: dotted;
+}
+
+a.highlighted--light:hover {
+    color: var(--color-light);
+}
