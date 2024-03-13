@@ -34,7 +34,6 @@
 }
 
 .about-me__link {
-    color: var(--color-accent-secondary);
     text-decoration-style: dotted;
 }
 
