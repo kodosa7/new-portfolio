@@ -592,6 +592,11 @@ h3 {
     color: var(--color-light);
 }
 
+.portfolio__heading--other {
+    margin-top: 4rem;
+    color: var(--color-light);
+}
+
 .portfolio__subtitle {
     margin-bottom: 2.5rem;
     font-family: var(--font-primary);
