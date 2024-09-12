@@ -6,9 +6,9 @@ This is the web portfolio summarizing my frontend development knowledge
 with the goal of finding a job as a frontend web developer.
 
 The page contains sub-pages with details of my work and links to both
-GitHub sources and live versions.
+GitHub repositories and live versions.
 
-Technologies used:
+## Technologies used
 -   HTML
 -   CSS (BEM methodology)
 -   JavaScript
