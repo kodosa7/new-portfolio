@@ -175,6 +175,12 @@ h3 {
     text-decoration: none;
 }
 
+@media (min-width: 800px) {
+    .nav__link {
+        font-size: $font-size-h2-desktop;
+    }
+}
+
 .nav__link:hover {
     color: $color-accent-secondary;
 }
