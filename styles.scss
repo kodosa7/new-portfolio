@@ -6,15 +6,6 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 800px) {
-    :root {
-        --font-size-h1: 5.5rem;
-        --font-size-h2: 2.25rem;
-        --font-size-h3: 1rem;
-        --font-size-body: 1.25rem;
-    }
-}
-
 /* base styles */
 
 html {
@@ -688,7 +679,7 @@ h3 {
     padding-bottom: 3.5rem;
     text-align: center;
     font-size: $font-size-h2;
-    background-color: $color-dark;
+    background-color: $color-dark-primary;
     color: $color-accent-secondary;
 }
 
