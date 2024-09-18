@@ -131,7 +131,7 @@ h3 {
   background-size: cover;
 }
 
-/* nav */
+/* navigation grill menu */
 .nav {
   position: fixed;
   top: 0;
@@ -177,7 +177,7 @@ h3 {
   color: #fcc200;
 }
 
-/* nav-btn */
+/* navigation grill menu button */
 .nav-btn {
   position: absolute;
   right: 1.25rem;
@@ -413,7 +413,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* btn */
+/* button */
 .btn {
   flex-grow: 0;
   flex-shrink: 1;
@@ -440,7 +440,7 @@ h3 {
   transform: scale(1.01);
 }
 
-/* Buttons animation */
+/* button animation */
 .btn::before,
 .btn::after {
   content: "";
@@ -617,7 +617,7 @@ h3 {
   opacity: 0.5;
 }
 
-/* project */
+/* single project */
 .project {
   max-width: 62.5rem;
   margin-left: auto;
@@ -728,7 +728,7 @@ h3 {
   opacity: 0.7;
 }
 
-/* highlighted */
+/* highlighted text */
 .highlighted {
   font-weight: 700;
   color: #bf4d47;

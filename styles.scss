@@ -142,7 +142,7 @@ h3 {
     background-size: cover;
 }
 
-/* nav */
+/* navigation grill menu */
 
 .nav {
     position: fixed;
@@ -190,7 +190,7 @@ h3 {
     color: $color-accent-secondary;
 }
 
-/* nav-btn */
+/* navigation grill menu button */
 
 .nav-btn {
     position: absolute;
@@ -436,7 +436,7 @@ h3 {
     font-family: $font-secondary;
 }
 
-/* btn */
+/* button */
 
 .btn {
     flex-grow: 0;
@@ -465,7 +465,7 @@ h3 {
     transform: scale(1.01);
 }
 
-/* Buttons animation */
+/* button animation */
 
 .btn::before,
 .btn::after {
@@ -647,7 +647,7 @@ h3 {
     opacity: 0.5;
 }
 
-/* project */
+/* single project */
 
 .project {
     max-width: 62.5rem;
@@ -758,7 +758,7 @@ h3 {
     opacity: 0.7;
 }
 
-/* highlighted */
+/* highlighted text */
 
 .highlighted {
     font-weight: 700;
@@ -779,6 +779,7 @@ a.highlighted--light:hover {
 
 /* utilities */
 
+// utility for screen readers
 .u-sr-heading {
     position: absolute;
     width: 1px;
