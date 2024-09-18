@@ -7,6 +7,8 @@
 }
 
 :root {
+    font-size: $font-size-body;
+
     h1 {
         font-size: $font-size-h1;
     }
@@ -16,24 +18,27 @@
     h3 {
         font-size: $font-size-h3;
     }
-    body {
-        font-size: $font-size-body;
-    }
-}
 
-@media (min-width: 800px) {
-    :root {
+    @media (min-width: 800px) {
+        font-size: $font-size-body * 1.25;
+
         h1 {
-            font-size: $font-size-h1-desktop;
+            font-size: $font-size-h1 * 1.25;
         }
         h2 {
-            font-size: $font-size-h2-desktop;
+            font-size: $font-size-h2 * 1.1;
         }
         h3 {
-            font-size: $font-size-h3-desktop;
+            font-size: $font-size-h3 * 1.25;
         }
-        body {
-            font-size: $font-size-body-desktop;
+    }
+
+    @media (min-width: 900px) {
+        h1 {
+            font-size: $font-size-h1 * 1.5;
+        }
+        h2 {
+            font-size: $font-size-h2 * 1.25;
         }
     }
 }
@@ -177,7 +182,7 @@ h3 {
 
 @media (min-width: 800px) {
     .nav__link {
-        font-size: $font-size-h2-desktop;
+        font-size: $font-size-h2 * 1.25;
     }
 }
 
@@ -723,7 +728,7 @@ h3 {
 
 @media (min-width: 800px) {
     .footer {
-        font-size: $font-size-h2-desktop;
+        font-size: $font-size-h2 * 1.25;
     }
 }
 

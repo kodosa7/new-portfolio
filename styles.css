@@ -4,33 +4,41 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 1rem;
+}
 :root h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 :root h2 {
   font-size: 1.5rem;
 }
 :root h3 {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
-:root body {
-  font-size: 1.125rem;
-}
-
 @media (min-width: 800px) {
+  :root {
+    font-size: 1.25rem;
+  }
   :root h1 {
-    font-size: 5.5rem;
+    font-size: 3.4375rem;
   }
   :root h2 {
-    font-size: 2.25rem;
+    font-size: 1.65rem;
   }
   :root h3 {
-    font-size: 1.25rem;
-  }
-  :root body {
-    font-size: 1.25rem;
+    font-size: 1.09375rem;
   }
 }
+@media (min-width: 900px) {
+  :root h1 {
+    font-size: 4.125rem;
+  }
+  :root h2 {
+    font-size: 1.875rem;
+  }
+}
+
 /* base styles */
 html {
   scroll-behavior: smooth; /* smooth scrolling */
@@ -41,7 +49,7 @@ body {
   color: #060302;
   margin: 0;
   font-family: "Reem Kufi", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 img {
@@ -78,7 +86,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -87,7 +95,7 @@ h2 {
 
 h3 {
   color: #f0f0f0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
   margin-top: 0.75rem;
 }
@@ -162,7 +170,7 @@ h3 {
 
 @media (min-width: 800px) {
   .nav__link {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
 }
 .nav__link:hover {
@@ -690,7 +698,7 @@ h3 {
 
 @media (min-width: 800px) {
   .footer {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
 }
 .footer__email {
