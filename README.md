@@ -11,6 +11,7 @@ GitHub repositories and live versions.
 ## Technologies used
 -   HTML
 -   CSS (BEM methodology)
+-   SCSS
 -   JavaScript
 
 ![github_preview_image](https://github.com/kodosa7/new-portfolio/assets/57393100/14cc71f7-fbb0-40aa-9525-a32908d8105c)
