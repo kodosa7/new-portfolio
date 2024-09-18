@@ -1,0 +1,4 @@
+// *** RE-SCALE FONT ***
+@function scale-font($size, $scale) {
+    @return $size * $scale;
+  }
