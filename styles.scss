@@ -6,6 +6,38 @@
     box-sizing: border-box;
 }
 
+:root {
+    h1 {
+        font-size: $font-size-h1;
+    }
+    h2 {
+        font-size: $font-size-h2;
+    }
+    h3 {
+        font-size: $font-size-h3;
+    }
+    body {
+        font-size: $font-size-body;
+    }
+}
+
+@media (min-width: 800px) {
+    :root {
+        h1 {
+            font-size: $font-size-h1-desktop;
+        }
+        h2 {
+            font-size: $font-size-h2-desktop;
+        }
+        h3 {
+            font-size: $font-size-h3-desktop;
+        }
+        body {
+            font-size: $font-size-body-desktop;
+        }
+    }
+}
+
 /* base styles */
 
 html {
@@ -681,6 +713,12 @@ h3 {
     font-size: $font-size-h2;
     background-color: $color-dark-primary;
     color: $color-accent-secondary;
+}
+
+@media (min-width: 800px) {
+    .footer {
+        font-size: $font-size-h2-desktop;
+    }
 }
 
 .footer__email {

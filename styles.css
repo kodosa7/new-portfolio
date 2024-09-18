@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+:root h1 {
+  font-size: 3rem;
+}
+:root h2 {
+  font-size: 1.5rem;
+}
+:root h3 {
+  font-size: 1rem;
+}
+:root body {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 800px) {
+  :root h1 {
+    font-size: 5.5rem;
+  }
+  :root h2 {
+    font-size: 2.25rem;
+  }
+  :root h3 {
+    font-size: 1.25rem;
+  }
+  :root body {
+    font-size: 1.25rem;
+  }
+}
 /* base styles */
 html {
   scroll-behavior: smooth; /* smooth scrolling */
@@ -14,7 +41,7 @@ body {
   color: #060302;
   margin: 0;
   font-family: "Reem Kufi", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 img {
@@ -656,6 +683,11 @@ h3 {
   color: #fcc200;
 }
 
+@media (min-width: 800px) {
+  .footer {
+    font-size: 2.25rem;
+  }
+}
 .footer__email {
   font-weight: 700;
   text-decoration-style: dotted;
