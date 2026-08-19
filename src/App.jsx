@@ -17,7 +17,7 @@ export default function App() {
     const handleOpenAskForCv = () => {
         setSelectedProject({
             id: "askforcv",
-            name: "ask for the paper :)",
+            name: "ask for the paper",
             type: "",
             subtitle: "",
             descriptions: []
