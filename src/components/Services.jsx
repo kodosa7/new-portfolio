@@ -1,36 +1,34 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 /**
  * Services Component
  * Highlights Design & Frontend and Hardware & Technology expertise.
  */
 export default function Services() {
+    const { t } = useLanguage();
+
     return (
-        <section class="container my-services" id="services">
-            <h2 class="my-services__title">What I do</h2>
+        <section className="container my-services" id="services">
+            <h2 className="my-services__title">{t.services.title}</h2>
 
-            <div class="my-services__services">
-                <div class="my-services__service">
-                    <h3 class="highlighted">Design & Frontend</h3>
+            <div className="my-services__services">
+                <div className="my-services__service">
+                    <h3 className="highlighted">{t.services.design.title}</h3>
 
-                    <p class="my-services__text">
-                        I build responsive, user-friendly web applications using{" "}
-                        <strong class="highlighted">HTML</strong>,{" "}
-                        <strong class="highlighted">CSS/SCSS</strong>,{" "}
-                        <strong class="highlighted">JavaScript</strong>, and{" "}
-                        <strong class="highlighted">React</strong>.
-                        My design focus is centered around clarity, clean typography, aesthetic precision, and meticulous attention to detail.
-                    </p>
+                    <p
+                        className="my-services__text"
+                        dangerouslySetInnerHTML={{ __html: t.services.design.text }}
+                    />
                 </div>
 
-                <div class="my-services__service">
-                    <h3 class="highlighted">Hardware & Technology</h3>
+                <div className="my-services__service">
+                    <h3 className="highlighted">{t.services.hardware.title}</h3>
 
-                    <p class="my-services__text">
-                        With a background in hackerspace projects and IT support, I work with 3D modeling for print,
-                        hardware modifications (such as custom display backlights), AV setups, and computer repair.
-                        I bring a methodical testing mindset to diagnosing and resolving hardware and software issues.
-                    </p>
+                    <p
+                        className="my-services__text"
+                        dangerouslySetInnerHTML={{ __html: t.services.hardware.text }}
+                    />
                 </div>
             </div>
         </section>

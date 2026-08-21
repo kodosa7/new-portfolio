@@ -199,21 +199,106 @@ h3 {
     color: $color-accent-secondary;
 }
 
-/* navigation button */
+/* header controls & language switcher */
 
-.nav-btn {
+.header__controls {
     position: absolute;
     right: 1.25rem;
     top: 1.25rem;
-    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     z-index: 1000;
+}
+
+.header__controls--open {
+    position: fixed;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 2rem;
+    padding: 0.2rem 0.35rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+}
+
+.lang-switch__btn {
+    background: transparent;
+    border: 0;
+    color: $color-dark-primary;
+    cursor: pointer;
+    padding: 0.25rem 0.55rem;
+    border-radius: 1rem;
+    font-family: $font-secondary;
+    font-size: 0.825rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $color-accent-primary;
+    }
+
+    &--active {
+        background-color: $color-accent-primary;
+        color: $color-light;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            color: $color-light;
+        }
+    }
+}
+
+.lang-switch__divider {
+    color: $color-dark-secondary;
+    opacity: 0.4;
+    font-size: 0.75rem;
+    user-select: none;
+    margin: 0 0.1rem;
+}
+
+.header__controls--open .lang-switch {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+
+    .lang-switch__btn {
+        color: $color-light;
+
+        &:hover {
+            color: $color-accent-secondary;
+        }
+
+        &--active {
+            background-color: $color-accent-primary;
+            color: $color-light;
+        }
+    }
+
+    .lang-switch__divider {
+        color: $color-light;
+        opacity: 0.4;
+    }
+}
+
+/* navigation button */
+
+.nav-btn {
+    position: relative;
+    padding: 0.5rem;
     cursor: pointer;
     border: 0;
     background-color: transparent;
-}
-
-.nav-btn--open {
-    position: fixed;
 }
 
 .nav-btn--open .nav-btn__hamburger {

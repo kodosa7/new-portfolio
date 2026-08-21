@@ -15,12 +15,12 @@ export default function ProjectCard({ project, onSelectProject }) {
     };
 
     return (
-        <article class="portfolio__item">
-            <h3 class="portfolio__name">{project.name}</h3>
+        <article className="portfolio__item">
+            <h3 className="portfolio__name">{project.name}</h3>
 
             {project.externalUrl ? (
                 <a
-                    class="portfolio__link"
+                    className="portfolio__link"
                     aria-label={project.name}
                     href={project.externalUrl}
                     target="_blank"
@@ -36,7 +36,7 @@ export default function ProjectCard({ project, onSelectProject }) {
                 </a>
             ) : project.id ? (
                 <a
-                    class="portfolio__link"
+                    className="portfolio__link"
                     aria-label={project.name}
                     href={`#${project.id}`}
                     onClick={handleClick}
@@ -50,7 +50,7 @@ export default function ProjectCard({ project, onSelectProject }) {
                     />
                 </a>
             ) : (
-                <span class="portfolio__link--no-link">
+                <span className="portfolio__link--no-link">
                     <img
                         src={project.image}
                         alt={project.name}

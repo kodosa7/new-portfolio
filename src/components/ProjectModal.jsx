@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 /**
  * ProjectModal Component
  * Reusable modal view for displaying project details, tech icons, links, and navigation.
  */
 export default function ProjectModal({ project, onClose, onNavigateProject, allProjects }) {
+    const { t } = useLanguage();
+
     if (!project) return null;
 
     // Handle Escape key to close modal
@@ -16,68 +19,71 @@ export default function ProjectModal({ project, onClose, onNavigateProject, allP
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [onClose]);
 
+    // If active project is askforcv, get localized askforcv object
+    const activeProject = project.id === "askforcv" ? t.askForCv : project;
+
     // Find current index and prev/next projects
-    const currentIndex = allProjects.findIndex(p => p.id === project.id);
+    const currentIndex = allProjects.findIndex(p => p.id === activeProject.id);
     const prevProject = currentIndex > 0 ? allProjects[currentIndex - 1] : null;
-    const nextProject = currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null;
+    const nextProject = currentIndex >= 0 && currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : null;
 
     return (
-        <div class="modal-overlay" onClick={onClose}>
-            <div class="modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 {/* Close Button */}
                 <button
-                    class="modal-close-btn"
+                    className="modal-close-btn"
                     onClick={onClose}
-                    aria-label="Close modal"
+                    aria-label={t.modal.closeAria}
                     type="button"
                 >
                     &times;
                 </button>
 
                 {/* Project Header View */}
-                <div class="project-modal__header">
-                    <h1 class="project-modal__title">{project.name}</h1>
-                    {project.subtitle && (
-                        <div class="project-modal__subtitle">{project.subtitle}</div>
+                <div className="project-modal__header">
+                    <h1 className="project-modal__title">{activeProject.name}</h1>
+                    {activeProject.subtitle && (
+                        <div className="project-modal__subtitle">{activeProject.subtitle}</div>
                     )}
-                    {project.image && (
+                    {activeProject.image && (
                         <img
-                            src={project.image}
-                            alt={project.name}
-                            class="project-modal__img"
+                            src={activeProject.image}
+                            alt={activeProject.name}
+                            className="project-modal__img"
                         />
                     )}
                 </div>
 
                 {/* Project Details Body */}
-                <div class="project">
+                <div className="project">
                     {/* Action Links & Tech Icons */}
-                    {(project.githubUrl || project.liveUrl || project.techIcons) && (
-                        <div class="project__buttons" style={{ justifyContent: "center", marginBottom: "1.5rem" }}>
-                            {project.githubUrl && (
+                    {(activeProject.githubUrl || activeProject.liveUrl || activeProject.techIcons) && (
+                        <div className="project__buttons" style={{ justifyContent: "center", marginBottom: "1.5rem" }}>
+                            {activeProject.githubUrl && (
                                 <a
-                                    class="project__button"
-                                    href={project.githubUrl}
+                                    className="project__button"
+                                    href={activeProject.githubUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <i class="fab fa-github"></i> GitHub Repo
+                                    <i className="fab fa-github"></i> {t.modal.githubBtn}
                                 </a>
                             )}
-                            {project.liveUrl && (
+                            {activeProject.liveUrl && (
                                 <a
-                                    class="project__button"
-                                    href={project.liveUrl}
+                                    className="project__button"
+                                    href={activeProject.liveUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <i class="fas fa-eye"></i> Live version
+                                    <i className="fas fa-eye"></i> {t.modal.liveBtn}
                                 </a>
                             )}
 
                             {/* Tech Stack Icons */}
-                            {project.techIcons && project.techIcons.map((iconClass, idx) => (
-                                <div class="project__icons" key={idx}>
+                            {activeProject.techIcons && activeProject.techIcons.map((iconClass, idx) => (
+                                <div className="project__icons" key={idx}>
                                     {iconClass === "custom-tailwind" ? (
                                         <img
                                             src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
@@ -85,7 +91,7 @@ export default function ProjectModal({ project, onClose, onNavigateProject, allP
                                             alt="Tailwind CSS"
                                         />
                                     ) : (
-                                        <i class={`${iconClass} fa-lg project__icon`} aria-hidden="true"></i>
+                                        <i className={`${iconClass} fa-lg project__icon`} aria-hidden="true"></i>
                                     )}
                                 </div>
                             ))}
@@ -93,46 +99,39 @@ export default function ProjectModal({ project, onClose, onNavigateProject, allP
                     )}
 
                     {/* Descriptions */}
-                    {project.descriptions && project.descriptions.map((desc, idx) => (
-                        <p class="project__description" key={idx}>
+                    {activeProject.descriptions && activeProject.descriptions.map((desc, idx) => (
+                        <p className="project__description" key={idx}>
                             {desc}
                         </p>
                     ))}
 
-                    {/* Special Ask for CV message */}
-                    {project.id === "askforcv" && (
-                        <p class="project__description">
-                            CVs contain personal information. Therefore, for safety reasons, it is no longer possible to download my CV directly from this website. You are still welcome to contact me anytime, and I’ll send it to you by email — of course if I consider the requester trustworthy and you comply with the quirky anti-spam feature.
-                        </p>
-                    )}
-
                     {/* Navigation Buttons (Home / Prev / Next) */}
-                    <div class="project__buttons" style={{ justifyContent: "center", marginTop: "2rem" }}>
+                    <div className="project__buttons" style={{ justifyContent: "center", marginTop: "2rem" }}>
                         <button
-                            class="project__button"
+                            className="project__button"
                             onClick={onClose}
                             type="button"
                         >
-                            <i class="fa fa-home"></i> Back to Main
+                            <i className="fa fa-home"></i> {t.modal.backToMain}
                         </button>
 
                         {prevProject && (
                             <button
-                                class="project__button"
+                                className="project__button"
                                 onClick={() => onNavigateProject(prevProject)}
                                 type="button"
                             >
-                                <i class="fa fa-arrow-left"></i> Previous project
+                                <i className="fa fa-arrow-left"></i> {t.modal.prevProject}
                             </button>
                         )}
 
                         {nextProject && (
                             <button
-                                class="project__button"
+                                className="project__button"
                                 onClick={() => onNavigateProject(nextProject)}
                                 type="button"
                             >
-                                <i class="fa fa-arrow-right"></i> Next project
+                                <i className="fa fa-arrow-right"></i> {t.modal.nextProject}
                             </button>
                         )}
                     </div>

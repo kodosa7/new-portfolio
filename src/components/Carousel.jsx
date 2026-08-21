@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
+import { useLanguage } from "../context/LanguageContext";
 
 /**
  * Carousel Component
@@ -10,6 +11,7 @@ export default function Carousel({ items, onSelectProject }) {
     const [itemsPerPage, setItemsPerPage] = useState(3);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
+    const { t } = useLanguage();
 
     // Update visible items per page based on viewport size
     useEffect(() => {
@@ -58,33 +60,33 @@ export default function Carousel({ items, onSelectProject }) {
     const totalDots = maxIndex + 1;
 
     return (
-        <div class="carousel-container">
+        <div className="carousel-container">
             {/* Previous Arrow */}
             <button
-                class="carousel-arrow carousel-arrow--prev"
+                className="carousel-arrow carousel-arrow--prev"
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                aria-label="Previous projects"
+                aria-label={t.carousel.prevAria}
                 type="button"
             >
-                <i class="fas fa-chevron-left"></i>
+                <i className="fas fa-chevron-left"></i>
             </button>
 
             {/* Track Wrapper */}
             <div
-                class="carousel-track-wrapper"
+                className="carousel-track-wrapper"
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
                 <div
-                    class="carousel-track"
+                    className="carousel-track"
                     style={{
                         transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)`
                     }}
                 >
                     {items.map((project) => (
-                        <div class="carousel-slide" key={project.id}>
+                        <div className="carousel-slide" key={project.id}>
                             <ProjectCard
                                 project={project}
                                 onSelectProject={onSelectProject}
@@ -96,24 +98,24 @@ export default function Carousel({ items, onSelectProject }) {
 
             {/* Next Arrow */}
             <button
-                class="carousel-arrow carousel-arrow--next"
+                className="carousel-arrow carousel-arrow--next"
                 onClick={nextSlide}
                 disabled={currentIndex >= maxIndex}
-                aria-label="Next projects"
+                aria-label={t.carousel.nextAria}
                 type="button"
             >
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
             </button>
 
             {/* Dot Indicators */}
             {totalDots > 1 && (
-                <div class="carousel-dots">
+                <div className="carousel-dots">
                     {Array.from({ length: totalDots }).map((_, idx) => (
                         <button
                             key={idx}
-                            class={`carousel-dot ${idx === currentIndex ? "carousel-dot--active" : ""}`}
+                            className={`carousel-dot ${idx === currentIndex ? "carousel-dot--active" : ""}`}
                             onClick={() => setCurrentIndex(idx)}
-                            aria-label={`Go to slide ${idx + 1}`}
+                            aria-label={`${t.carousel.dotAria} ${idx + 1}`}
                             type="button"
                         />
                     ))}

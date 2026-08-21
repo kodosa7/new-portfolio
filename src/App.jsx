@@ -5,46 +5,41 @@ import Services from "./components/Services";
 import Carousel from "./components/Carousel";
 import ProjectModal from "./components/ProjectModal";
 import Footer from "./components/Footer";
-import { digitalProjects, creativeProjects } from "./data/projectsData";
+import { LanguageProvider, useLanguage } from "./context/LanguageContext";
 
 /**
- * Main App Component
- * Orchestrates main sections, dual carousels, and project detail modal.
+ * Portfolio Content Component
+ * Consumes language context to render localized headings and project carousels.
  */
-export default function App() {
+function PortfolioContent() {
     const [selectedProject, setSelectedProject] = useState(null);
+    const { t, digitalProjects, creativeProjects } = useLanguage();
 
     const handleOpenAskForCv = () => {
-        setSelectedProject({
-            id: "askforcv",
-            name: "ask for the paper",
-            type: "",
-            subtitle: "",
-            descriptions: []
-        });
+        setSelectedProject(t.askForCv);
     };
 
     return (
-        <div class="app">
-            {/* Header */}
+        <div className="app">
+            {/* Header with Navigation and Language Switcher */}
             <Header />
 
-            <main class="main">
+            <main className="main">
                 {/* About me */}
-                <div class="wedge"></div>
+                <div className="wedge"></div>
                 <AboutMe onOpenAskForCv={handleOpenAskForCv} />
 
                 {/* Skills & Services */}
-                <div class="wedge"></div>
+                <div className="wedge"></div>
                 <Services />
 
                 {/* Portfolio Section with Carousels */}
-                <div class="wedge"></div>
-                <section class="container portfolio" id="work">
+                <div className="wedge"></div>
+                <section className="container portfolio" id="work">
                     {/* Selected Digital Projects Carousel */}
-                    <h2 class="title portfolio__heading">Selected Digital Projects</h2>
-                    <p class="portfolio__subtitle">
-                        Frontend, design and multimedia work
+                    <h2 className="title portfolio__heading">{t.portfolio.digitalHeading}</h2>
+                    <p className="portfolio__subtitle">
+                        {t.portfolio.digitalSubtitle}
                     </p>
                     <Carousel
                         items={digitalProjects}
@@ -52,11 +47,11 @@ export default function App() {
                     />
 
                     {/* Creative & Experimental Work Carousel */}
-                    <h2 class="title portfolio__heading--other">
-                        Creative & Experimental Work
+                    <h2 className="title portfolio__heading--other">
+                        {t.portfolio.creativeHeading}
                     </h2>
-                    <p class="portfolio__subtitle">
-                        Graphics, retro computing and demoscene-related projects
+                    <p className="portfolio__subtitle">
+                        {t.portfolio.creativeSubtitle}
                     </p>
                     <Carousel
                         items={creativeProjects}
@@ -76,5 +71,17 @@ export default function App() {
                 allProjects={digitalProjects}
             />
         </div>
+    );
+}
+
+/**
+ * Main App Component
+ * Wraps portfolio content with LanguageProvider.
+ */
+export default function App() {
+    return (
+        <LanguageProvider>
+            <PortfolioContent />
+        </LanguageProvider>
     );
 }

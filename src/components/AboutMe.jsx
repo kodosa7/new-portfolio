@@ -1,58 +1,37 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 /**
  * AboutMe Component
  * Displays bio, background, demoscene/hackerspace hardware tinkering, and resume/projects buttons.
  */
 export default function AboutMe({ onOpenAskForCv }) {
+    const { t } = useLanguage();
+
     return (
-        <section class="container about-me" id="about">
-            <h2 class="about-me__title">Who I am</h2>
+        <section className="container about-me" id="about">
+            <h2 className="about-me__title">{t.about.title}</h2>
 
-            <div class="about-me__body">
-                <p>
-                    I am a creative technologist who thrives on{" "}
-                    <strong class="highlighted highlighted--light">precision</strong>,{" "}
-                    <strong class="highlighted highlighted--light">problem-solving</strong>, and a strong{" "}
-                    <strong class="highlighted highlighted--light">attention to detail</strong>.
-                    My work connects frontend web development, visual design, and hands-on technical exploration rooted in the{" "}
-                    <a
-                        class="highlighted highlighted--light"
-                        href="https://en.wikipedia.org/wiki/Demoscene"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        demoscene
-                    </a>{" "}
-                    and local hackerspace community.
-                </p>
-
-                <p>
-                    I enjoy understanding how things work under the hood — whether that means writing clean frontend code,
-                    designing 3D models for print, or hardware tinkering. My projects range from custom Casio watch LED backlight modifications
-                    to diagnosing and restoring vintage computer hardware and general IT systems.
-                </p>
-
-                <p>
-                    I bring a patient, systematic approach to troubleshooting: testing, iterating, and finding practical solutions to technical challenges.
-                    I’m always eager to learn, build, and craft visually polished, reliable experiences.
-                </p>
+            <div className="about-me__body">
+                <p dangerouslySetInnerHTML={{ __html: t.about.p1 }} />
+                <p>{t.about.p2}</p>
+                <p>{t.about.p3}</p>
             </div>
 
-            <div class="about-me__buttons">
+            <div className="about-me__buttons">
                 <button
                     onClick={onOpenAskForCv}
-                    class="btn btn--resume"
+                    className="btn btn--resume"
                     type="button"
                 >
-                    <div class="btn__text">
-                        <i class="fas fa-file-pdf"></i> My Resume
+                    <div className="btn__text">
+                        <i className="fas fa-file-pdf"></i> {t.about.resumeBtn}
                     </div>
                 </button>
 
-                <a href="#work" class="btn btn--projects">
-                    <div class="btn__text">
-                        <i class="fas fa-arrow-down"></i> Projects
+                <a href="#work" className="btn btn--projects">
+                    <div className="btn__text">
+                        <i className="fas fa-arrow-down"></i> {t.about.projectsBtn}
                     </div>
                 </a>
             </div>
