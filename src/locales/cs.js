@@ -129,110 +129,13 @@ export const cs = {
                 "Statický informační web pro demoparty akci, který zve návštěvníky a poskytuje jim základní informace o místě konání. Plně responzivní.",
                 "Vytvořeno pomocí HTML, CSS a čistého JavaScriptu."
             ]
-        },
-        {
-            id: "quizzical",
-            name: "Quizzical",
-            type: "webová aplikace",
-            subtitle: "React",
-            image: "/img/quizzical.webp",
-            githubUrl: "https://github.com/kodosa7/quizzical/",
-            liveUrl: "https://playful-piroshki-6ccf14.netlify.app/",
-            techIcons: ["fab fa-react", "fab fa-css3-alt"],
-            descriptions: [
-                "Mini kvízová webová aplikace načítající náhodnou sadu otázek z webového API a vyhodnocující odpovědi uživatele.",
-                "Projekt využívá komponenty a React hooky jako useState a useEffect. Jednalo se o samostatný React projekt v rámci kurzu Scrimba Frontend Path."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
-        },
-        {
-            id: "travel-journal",
-            name: "Travel Journal",
-            type: "webová aplikace",
-            subtitle: "React",
-            image: "/img/travel-journal.webp",
-            githubUrl: "https://github.com/kodosa7/travel-journal/",
-            liveUrl: "https://superlative-mooncake-bede24.netlify.app/",
-            techIcons: ["fab fa-react", "fab fa-css3-alt"],
-            descriptions: [
-                "Ukázková aplikace pro plánování cestování zobrazující různé destinace.",
-                "Jednalo se o samostatný projekt kapitoly základů Reactu v kurzu Scrimba Frontend Path. Využívá komponenty Reactu."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
-        },
-        {
-            id: "color-picker",
-            name: "Color Picker",
-            type: "webová aplikace",
-            subtitle: "HTML, CSS & JavaScript",
-            image: "/img/color-picker.webp",
-            githubUrl: "https://github.com/kodosa7/color-picker-js/",
-            liveUrl: "https://kodosa7.github.io/color-picker-js/",
-            techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
-            descriptions: [
-                "Webová aplikace načítající různé sady barev z webového API, která uživatelům umožňuje vybírat kombinace odpovídající zvolenému barevnému schématu.",
-                "Vytvořeno pomocí HTML/CSS a čistého JavaScriptu jako cvičení na práci s API v rámci kurzu Scrimba Frontend Path."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
-        },
-        {
-            id: "mobile-restaurant",
-            name: "Mobile Restaurant",
-            type: "webová aplikace",
-            subtitle: "HTML, CSS & JavaScript",
-            image: "/img/mobile-restaurant.webp",
-            githubUrl: "https://github.com/kodosa7/mobile-restaurant-js/",
-            liveUrl: "https://precious-malasada-6a2bc6.netlify.app/",
-            techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
-            descriptions: [
-                "Webová aplikace pro objednávání jídla z lokální restaurace. Uživatelé si mohou vybrat hamburgery, pizzu nebo pivo, přidat je do košíku a dokončit objednávku.",
-                "Vytvořeno pomocí HTML/CSS a čistého JavaScriptu jako cvičení na práci s daty a formuláři v rámci kurzu Scrimba Frontend Path."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
-        },
-        {
-            id: "twimba",
-            name: "Twimba",
-            type: "webová aplikace",
-            subtitle: "HTML, CSS & JavaScript",
-            image: "/img/twimba.webp",
-            githubUrl: "https://github.com/kodosa7/twimba-js/",
-            liveUrl: "https://whimsical-taffy-7e5a44.netlify.app/",
-            techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
-            descriptions: [
-                "Klon Twitteru zobrazující tweety z lokálního datového souboru. Uživatelé mohou lajkovat, retweetovat nebo komentovat. Do seznamu lze přidat i nový tweet.",
-                "Tento projekt je vytvořen pomocí HTML, CSS a čistého JavaScriptu jako cvičení na práci s lokálními daty v kurzu Scrimba Frontend Path."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
-        },
-        {
-            id: "unit-converter",
-            name: "Unit Converter",
-            type: "webová aplikace",
-            subtitle: "HTML, CSS & JavaScript",
-            image: "/img/unit-converter.webp",
-            githubUrl: "https://github.com/kodosa7/unit-converter-js/",
-            liveUrl: "https://profound-marigold-60788a.netlify.app/",
-            techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
-            descriptions: [
-                "Jednoduchá webová aplikace převodníku jednotek, která umožňuje převádět metry na stopy, litry na galony, kilogramy na libry a naopak.",
-                "Uživatel zadá číslo do formuláře a stisknutím tlačítka provede převod. Pokud je zadána nečíselná hodnota, program zobrazí upozornění.",
-                "Tento projekt byl vytvořen pomocí HTML, CSS a čistého JavaScriptu v rámci kurzu Scrimba Frontend Path."
-            ],
-            courseLink: "https://scrimba.com/learn/frontend",
-            courseName: "Scrimba Frontend Path"
         }
     ],
     creativeProjects: [
         {
             id: "fruitypete",
             name: "Homebrew herní design",
-            subtitle: "Atari a retro hry",
+            subtitle: "Commodore 64 a retro hry",
             image: "/img/fruitypete.webp",
             externalUrl: "https://www.youtube.com/watch?v=ZlyazBbdAe4"
         },
